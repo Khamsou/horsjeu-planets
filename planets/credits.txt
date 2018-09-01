@@ -1,0 +1,16 @@
+3D Models
+
+Apollo Lunar Module - Michael Carbajal. NASA Headquarters
+Advanced Crew Escape Suit - Michael Carbajal. NASA Headquarters
+Low Polygon Soccer Football - Ahmet Gencoglu
+Ant - ZERG_LURKER
+Sean Connery - steve45
+
+
+Textures
+
+Lunar Rock texture by Cameron 'cron' Fraser is licensed under a Creative Commons Attribution 4.0 International License.
+
+Skybox
+
+ 3 Skyboxes - Bright Shining Star

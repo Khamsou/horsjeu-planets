@@ -1,0 +1,1548 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DrawRay",
+				"DrawRay(Vector3 start, Vector3 dir, Color color, float duration)\tvoid"
+			],
+			[
+				"Draw",
+				"DrawRay(Vector3 start, Vector3 dir)\tvoid"
+			],
+			[
+				"Gravity",
+				"GravityAttractor\tGravityAttractor"
+			],
+			[
+				"Game",
+				"GameController\tGameController"
+			],
+			[
+				"Find",
+				"FindGameObjectsWithTag(string tag)\tGameObject[]"
+			],
+			[
+				"Collider",
+				"BoxCollider\tBoxCollider"
+			],
+			[
+				"local",
+				"localScale\tVector3 { get; set; }"
+			],
+			[
+				"Gravi",
+				"GravityBody\tGravityBody"
+			],
+			[
+				"Fi",
+				"fixedDeltaTime\tfloat { get; set; }"
+			],
+			[
+				"gr",
+				"grounded\tbool"
+			],
+			[
+				"Tra",
+				"Translate(Vector3 translation)\tvoid"
+			],
+			[
+				"Vector3",
+				"Vector3()\tVector3()"
+			],
+			[
+				"S",
+				"Scale(Vector3 a, Vector3 b)\tVector3"
+			],
+			[
+				"Add",
+				"AddForce(Vector3 force, ForceMode mode)\tvoid"
+			],
+			[
+				"Rigidb",
+				"Rigidbody\tRigidbody"
+			],
+			[
+				"sc",
+				"localScale\tVector3 { get; set; }"
+			],
+			[
+				"shortest",
+				"shortestIndex\tint"
+			],
+			[
+				"M",
+				"Max(float a, float b)\tfloat"
+			],
+			[
+				"short",
+				"shortestDistance\tfloat"
+			],
+			[
+				"new",
+				"newPlanet\tGameObject"
+			],
+			[
+				"for",
+				"foreach\tforeach"
+			],
+			[
+				"planet",
+				"planetAttractedTo\tGameObject"
+			],
+			[
+				"grounded",
+				"groundedMask\tLayerMask"
+			],
+			[
+				"get",
+				"GetButtonDown(string buttonName)\tbool"
+			],
+			[
+				"fix",
+				"fixedDeltaTime\tfloat { get; set; }"
+			],
+			[
+				"Get",
+				"GetAxisRaw(string axisName)\tfloat"
+			],
+			[
+				"GetAx",
+				"GetAxisRaw(string axisName)\tfloat"
+			],
+			[
+				"Vector",
+				"Vector3\tVector3"
+			],
+			[
+				"mouseSen",
+				"mouseSensitivityY\tfloat"
+			],
+			[
+				"Vec",
+				"Vector3\tVector3"
+			],
+			[
+				"Rigid",
+				"Rigidbody\tRigidbody"
+			],
+			[
+				"fre",
+				"FreezeRotation\tRigidbodyConstraints"
+			],
+			[
+				"FindG",
+				"FindGameObjectWithTag(string tag)\tGameObject"
+			],
+			[
+				"scr",
+				"scroll_position"
+			],
+			[
+				"force",
+				"forceMultiplier\tfloat"
+			],
+			[
+				"For",
+				"ForceMode2D\tForceMode2D"
+			],
+			[
+				"AddFo",
+				"AddForce(Vector2 force, ForceMode2D mode)\tvoid"
+			],
+			[
+				"GetMou",
+				"GetMouseButton(int button)\tbool"
+			],
+			[
+				"Co",
+				"color\tColor { get; set; }"
+			],
+			[
+				"Cursor",
+				"CursorMode\tCursorMode"
+			],
+			[
+				"Curs",
+				"CursorMode\tCursorMode"
+			],
+			[
+				"TExture",
+				"Texture2D\tTexture2D"
+			],
+			[
+				"Lerp",
+				"Slerp(Vector3 a, Vector3 b, float t)\tVector3"
+			],
+			[
+				"Clamp",
+				"Clamp(float value, float min, float max)\tfloat"
+			],
+			[
+				"ne",
+				"newRotationX\tfloat"
+			],
+			[
+				"newR",
+				"newRotation\tVector3"
+			],
+			[
+				"newRota",
+				"newRotationY\tfloat"
+			],
+			[
+				"playe",
+				"playerCamera\tGameObject"
+			],
+			[
+				"main",
+				"mainTexture\tTexture { get; set; }"
+			],
+			[
+				"portal",
+				"portalMaterial\tMaterial"
+			],
+			[
+				"VEctor",
+				"Vector3\tVector3"
+			],
+			[
+				"Clo",
+				"ClosestPoint\tVector3"
+			],
+			[
+				"is",
+				"isInit\tbool"
+			],
+			[
+				"Force",
+				"ForceMode\tForceMode"
+			],
+			[
+				"Trans",
+				"TransformDirection(Vector3 direction)\tVector3"
+			],
+			[
+				"Rayca",
+				"Raycast(Vector3 origin, Vector3 direction)\tbool"
+			],
+			[
+				"Ray",
+				"RaycastHit\tRaycastHit"
+			],
+			[
+				"Charac",
+				"CharacterUpdate()\tvoid"
+			],
+			[
+				"Ene",
+				"EnemyShootBehaviour\tEnemyShootBehaviour"
+			],
+			[
+				"Range",
+				"Range(int min, int max)\tint"
+			],
+			[
+				"Play",
+				"PlayerController\tPlayerController"
+			],
+			[
+				"FOr",
+				"ForceMode2D\tForceMode2D"
+			],
+			[
+				"add",
+				"AddForce(Vector2 force)\tvoid"
+			],
+			[
+				"c",
+				"color\tColor { get; set; }"
+			],
+			[
+				"P",
+				"Play()\tvoid"
+			],
+			[
+				"audio",
+				"audioSource\tAudioSource"
+			],
+			[
+				"boss",
+				"bossObject\tGameObject"
+			],
+			[
+				"RigidbodyC",
+				"RigidbodyConstraints2D\tRigidbodyConstraints2D"
+			],
+			[
+				"SCENE",
+				"sceneCountInBuildSettings\tint { get; }"
+			],
+			[
+				"OverlapBox",
+				"OverlapBoxAll(Vector2 point, Vector2 size, float angle)\tCollider2D[]"
+			],
+			[
+				"C",
+				"Count\tint { get; }"
+			],
+			[
+				"GuiTe",
+				"GUIText\tGUIText"
+			],
+			[
+				"Gui",
+				"guiText\tComponent { get; }"
+			],
+			[
+				"game",
+				"gameObject\tGameObject { get; }"
+			],
+			[
+				"VEctr",
+				"Vector3\tVector3"
+			],
+			[
+				"bur",
+				"SetBurst(int index, Burst burst)\tvoid"
+			],
+			[
+				"isp",
+				"isPlaying\tbool { get; }"
+			],
+			[
+				"Partic",
+				"ParticleSystem\tParticleSystem"
+			],
+			[
+				"rand",
+				"randomY\tint"
+			],
+			[
+				"IEn",
+				"IEnumerator\tIEnumerator"
+			],
+			[
+				"cha",
+				"changeScrollDirection\tIEnumerator"
+			],
+			[
+				"Mes",
+				"MeshRenderer\tMeshRenderer"
+			],
+			[
+				"Vecto",
+				"Vector3(float x, float y)\tVector3(float x, float y)"
+			],
+			[
+				"Set",
+				"SetBool(string name, bool value)\tvoid"
+			],
+			[
+				"Start",
+				"StartCoroutine(IEnumerator routine)\tCoroutine"
+			],
+			[
+				"Vect",
+				"Vector3\tVector3"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"la",
+				"IsTouchingLayers(int layerMask)\tbool"
+			],
+			[
+				"Collision",
+				"Collision2D\tCollision2D"
+			],
+			[
+				"GetKeyDo",
+				"GetKeyDown(string name)\tbool"
+			],
+			[
+				"player",
+				"playerController\tPlayerController"
+			],
+			[
+				"Ov",
+				"OverlapArea(Vector2 pointA, Vector2 pointB)\tCollider2D"
+			],
+			[
+				"Physics",
+				"Physics2D\tPhysics2D"
+			],
+			[
+				"Vector2",
+				"Vector2(float x, float y)\tVector2(float x, float y)"
+			],
+			[
+				"Box",
+				"BoxCollider2D\tBoxCollider2D"
+			],
+			[
+				"Scene",
+				"SceneManager\tSceneManager"
+			],
+			[
+				"FPS",
+				"FPSTargeter\tFPSTargeter"
+			],
+			[
+				"soldi",
+				"soldierCount\tfloat"
+			],
+			[
+				"Stop",
+				"StopCoroutine(IEnumerator routine)\tvoid"
+			],
+			[
+				"Sho",
+				"ShowDIH()\tvoid"
+			],
+			[
+				"anima",
+				"animator\tAnimator"
+			],
+			[
+				"FPST",
+				"FPSTargeter\tFPSTargeter"
+			],
+			[
+				"du",
+				"durationCodec\tfloat"
+			],
+			[
+				"AudioS",
+				"AudioSource\tAudioSource"
+			],
+			[
+				"Animation",
+				"AnimationEvent\tAnimationEvent"
+			],
+			[
+				"GetCompo",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"sha",
+				"shakeDuration\tfloat"
+			],
+			[
+				"dama",
+				"damageCamera\tbool"
+			],
+			[
+				"hit",
+				"hitCount\tfloat"
+			],
+			[
+				"trans",
+				"transparent\tColor"
+			],
+			[
+				"glitch",
+				"glitch01Image\tImage"
+			],
+			[
+				"Ne",
+				"GetNextAnimatorStateInfo(int layerIndex)\tAnimatorStateInfo"
+			],
+			[
+				"Is",
+				"IsInTransition(int layerIndex)\tbool"
+			],
+			[
+				"set",
+				"SetBool(string name, bool value)\tvoid"
+			],
+			[
+				"togl",
+				"toggleThreat()\tvoid"
+			],
+			[
+				"UI",
+				"UI_Threat\tGameObject"
+			],
+			[
+				"GetCurren",
+				"GetCurrentAnimatorStateInfo(int layerIndex)\tAnimatorStateInfo"
+			],
+			[
+				"newWan",
+				"newWantedXRot\tfloat"
+			],
+			[
+				"hori",
+				"horizontalAxis\tfloat"
+			],
+			[
+				"verti",
+				"verticalAxis\tfloat"
+			],
+			[
+				"vertical",
+				"verticalTilt\tfloat"
+			],
+			[
+				"camera",
+				"cameraTransform\tTransform"
+			],
+			[
+				"remo",
+				"Remove(T item)\tbool"
+			],
+			[
+				"Anima",
+				"Animator\tAnimator"
+			],
+			[
+				"Audio",
+				"AudioClip\tAudioClip"
+			],
+			[
+				"play",
+				"Play()\tvoid"
+			],
+			[
+				"pl",
+				"Play()\tvoid"
+			],
+			[
+				"Sphe",
+				"SphereCast(Vector3 origin, float radius, Vector3 direction, out RaycastHit hitInfo)\tbool"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "planets.sublime-project",
+			"settings":
+			{
+				"buffer_size": 107,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/FirstPersonController.cs",
+			"settings":
+			{
+				"buffer_size": 4079,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/GravityAttractor.cs",
+			"settings":
+			{
+				"buffer_size": 523,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/GravityBody.cs",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/GameController.cs",
+			"settings":
+			{
+				"buffer_size": 449,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "credits.txt",
+			"settings":
+			{
+				"buffer_size": 393,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "3D Models"
+			}
+		},
+		{
+			"file": "/C/Users/Khamsou'/Desktop/save_perso.css",
+			"settings":
+			{
+				"buffer_size": 1300,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "* {"
+			}
+		},
+		{
+			"contents": "/[Ll]ibrary/\n/[Tt]emp/\n/[Oo]bj/\n/[Bb]uild/\n/[Bb]uilds/\nAssets/AssetStoreTools*\n\n# Visual Studio cache directory\n.vs/\n\n# Autogenerated VS/MD/Consulo solution and project files\nExportedObj/\n.consulo/\n*.csproj\n*.unityproj\n*.sln\n*.suo\n*.tmp\n*.user\n*.userprefs\n*.pidb\n*.booproj\n*.svd\n*.pdb\n*.opendb\n\n# Unity3D generated meta files\n*.pidb.meta\n*.pdb.meta\n\n# Unity3D Generated File On Crash Reports\nsysinfo.txt\n\n# Builds\n*.apk\n*.unitypackage\n",
+			"file": ".gitignore",
+			"file_size": 435,
+			"file_write_time": 131802788865711759,
+			"settings":
+			{
+				"buffer_size": 435,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * Outputs the OPML XML format for getting the links defined in the link\n * administration. This can be used to export links from one blog over to\n * another. Links aren't exported by the WordPress export, so this file handles\n * that.\n *\n * This file is not added by default to WordPress theme pages when outputting\n * feed links. It will have to be added manually for browsers and users to pick\n * up that this file exists.\n *\n * @package WordPress\n */\n\nrequire_once( dirname( __FILE__ ) . '/wp-load.php' );\n\nheader('Content-Type: text/xml; charset=' . get_option('blog_charset'), true);\n$link_cat = '';\nif ( !empty($_GET['link_cat']) ) {\n\t$link_cat = $_GET['link_cat'];\n\tif ( !in_array($link_cat, array('all', '0')) )\n\t\t$link_cat = absint( (string)urldecode($link_cat) );\n}\n\necho '<?xml version=\"1.0\"?'.\">\\n\";\n?>\n<opml version=\"1.0\">\n\t<head>\n\t\t<title><?php\n\t\t\t/* translators: 1: Site name */\n\t\t\tprintf( __('Links for %s'), esc_attr(get_bloginfo('name', 'display')) );\n\t\t?></title>\n\t\t<dateCreated><?php echo gmdate(\"D, d M Y H:i:s\"); ?> GMT</dateCreated>\n\t\t<?php\n\t\t/**\n\t\t * Fires in the OPML header.\n\t\t *\n\t\t * @since 3.0.0\n\t\t */\n\t\tdo_action( 'opml_head' );\n\t\t?>\n\t</head>\n\t<body>\n<?php\nif ( empty($link_cat) )\n\t$cats = get_categories(array('taxonomy' => 'link_category', 'hierarchical' => 0));\nelse\n\t$cats = get_categories(array('taxonomy' => 'link_category', 'hierarchical' => 0, 'include' => $link_cat));\n\nforeach ( (array)$cats as $cat ) :\n\t/**\n\t * Filters the OPML outline link category name.\n\t *\n\t * @since 2.2.0\n\t *\n\t * @param string $catname The OPML outline category name.\n\t */\n\t$catname = apply_filters( 'link_category', $cat->name );\n\n?>\n<outline type=\"category\" title=\"<?php echo esc_attr($catname); ?>\">\n<?php\n\t$bookmarks = get_bookmarks(array(\"category\" => $cat->term_id));\n\tforeach ( (array)$bookmarks as $bookmark ) :\n\t\t/**\n\t\t * Filters the OPML outline link title text.\n\t\t *\n\t\t * @since 2.2.0\n\t\t *\n\t\t * @param string $title The OPML outline title text.\n\t\t */\n\t\t$title = apply_filters( 'link_title', $bookmark->link_name );\n?>\n\t<outline text=\"<?php echo esc_attr($title); ?>\" type=\"link\" xmlUrl=\"<?php echo esc_attr($bookmark->link_rss); ?>\" htmlUrl=\"<?php echo esc_attr($bookmark->link_url); ?>\" updated=\"<?php if ('0000-00-00 00:00:00' != $bookmark->link_updated) echo $bookmark->link_updated; ?>\" />\n<?php\n\tendforeach; // $bookmarks\n?>\n</outline>\n<?php\nendforeach; // $cats\n?>\n</body>\n</opml>\n",
+			"file": "/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/wp-links-opml.php",
+			"file_size": 2505,
+			"file_write_time": 131801059688357056,
+			"settings":
+			{
+				"buffer_size": 2422,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "# BEGIN WordPress\n\nRewriteEngine On\nRewriteBase /\nRewriteRule ^index\\.php$ - [L]\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule . /index.php [L]\n\n# END WordPress",
+			"file": "/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/.htaccess",
+			"file_size": 207,
+			"file_write_time": 131801063442496775,
+			"settings":
+			{
+				"buffer_size": 198,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MovingNPC.cs",
+			"settings":
+			{
+				"buffer_size": 866,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/InteractableItemBehaviour.cs",
+			"settings":
+			{
+				"buffer_size": 729,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Lua/Lua.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Love2D"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Lua/Lua.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				],
+				[
+					"Packages/User/love-run.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Love2D"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 71.0,
+		"last_filter": "run cart",
+		"selected_items":
+		[
+			[
+				"run cart",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"run ca",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"pico",
+				"PICO-8: Browse BBS"
+			],
+			[
+				"",
+				"Build With: LuaLove"
+			],
+			[
+				"run car",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"run c",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				" run",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"4",
+				"Set Syntax: camlp4"
+			],
+			[
+				"runca",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"run",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"run carte",
+				"PICO-8: Run Cartridge"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"love",
+				"Build With: LuaLove"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open ",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package control",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"set syntax love",
+				"Set Syntax: Lua (Love)"
+			],
+			[
+				"love ",
+				"Build With: LuaLove"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 564.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"Set Syntax: Lua (Love)",
+			"lua",
+			"Set Synta Lua (Love)",
+			"Set Syntax Lua (Love)",
+			"Set Syntax: Lua (Love)",
+			"Set Syntax:Lua(Love)",
+			"Set Syntax:Lua (Love)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Projects/planets"
+	],
+	"file_history":
+	[
+		"/D/Projects/planets/.gitignore",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/wp-login.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/wp-settings.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/custom-carousel-script.js",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/custom-image-fader.js",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/setup-config.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/D/Projects/pera/Assets/Scripts/GameController.cs",
+		"/D/Projects/planets/Assets/Scripts/SatelliteBehaviour.cs",
+		"/D/Projects/planets/Assets/Scripts/FlagBehaviour.cs",
+		"/D/Projects/pera/Assets/Scripts/PoolController.cs",
+		"/D/Emulation/PC/Dragon Ball FighterZ/RED/Binaries/Win64/REVOLT.ini",
+		"/D/Emulation/PC/Dragon Ball FighterZ/Engine/Binaries/ThirdParty/Steamworks/Steamv141/Win64/steam_emu.ini",
+		"/D/Projects/planets/Assets/Scripts/GravityBody.cs",
+		"/D/Projects/planets/Assembly-CSharp.csproj",
+		"/C/Users/Khamsou'/Desktop/custom-image-fader.js",
+		"/C/Users/Khamsou'/Desktop/functions.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/custom-carousel-script 2.js",
+		"/C/Users/Khamsou'/AppData/Local/Temp/image-carousel.txt",
+		"/C/Users/Khamsou'/Desktop/custom-carousel-script.js",
+		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/custom.css",
+		"/C/Users/Khamsou'/Desktop/custom.css",
+		"/C/wamp/www/prestidecap/wp-content/themes/zerif-lite/ti-about-page/class-ti-about-page.php",
+		"/C/wamp/www/prestidecap/wp-content/themes/index.php",
+		"/C/wamp/www/prestidecap/wp-login.php",
+		"/C/wamp/www/prestidecap/wp-config.php",
+		"/C/wamp/www/horsdoeuvre/wp-config.php",
+		"/D/Projets/pera/Assets/Scripts/PlayerController.cs",
+		"/D/Projects/vaporshooter/vaporshooter/Assets/Scripts/CharacterController.cs",
+		"/D/Programmes/SotC-Viewer-master/README.txt",
+		"/D/Cours/M2/Mémoire 2/Expérimentations/OOT mod/EponaNutella/Assets/Scripts/FPSCameraController.cs",
+		"/D/Projects/vaporshooter/vaporshooter/Assets/Scripts/AimAndUseController.cs",
+		"/D/Projects/vaporshooter/vaporshooter/Assets/Scripts/CursorController.cs",
+		"/D/Projects/vaporshooter/vaporshooter/Assets/Scripts/CameraController.cs",
+		"/D/Cours/M2/Mémoire 2/Expérimentations/OOT mod/EponaNutella/Assets/Scripts/CameraFollow.cs",
+		"/D/Assets/Components/NavMeshComponents-master/README.md",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSCameraController.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSPlayerController.cs",
+		"/D/Assets/3d models/Zelda OOT/ReadMe.txt",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/ShootController.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/GunController.cs",
+		"/D/Assets/Materials/Readme.txt",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/BluePortalController.cs",
+		"/D/Cours/M2/Mémoire 2/Expérimentations/OOT mod/EponaNutella/Assets/Scripts/test.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/DarkLight.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/GameOverScript.cs",
+		"/C/Users/Khamsou'/Desktop/Exercice_03_Portal/Exercice_03_Portal/Intentions_Exo_03.txt",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSTargetCivil.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSTarget.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs",
+		"/D/Cours/M2/Unity/Portalus/Portalus.sublime-project",
+		"/D/Cours/M2/Unity/Portalus/Assets/PortalController.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/ShootScript.cs",
+		"/D/Cours/M2/Unity/Portalus/Assets/Scripts/test.cs",
+		"/D/Cours/M2/UnityPortalus/Portalus/Assets/Scripts/test.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/MusicScript.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/EnemyBehaviour.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/EnemyBehaviour.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/PlatformCollider.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/CameraScript.cs",
+		"/D/Cours/M2/Unity/Tout Feu Tout Flamme/Assets/Scripts/ShootBehaviour.cs",
+		"/D/Cours/M2/Unity/Tout Feu Tout Flamme/Assets/Scripts/BulleBehaviour.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/TeleporterScript.cs",
+		"/D/Cours/M2/Unity/Tout Feu Tout Flamme/Assets/Scripts/PlayerController.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/MusicScript.cs",
+		"/D/Cours/M2/Unity/Tout Feu Tout Flamme/Assets/ShootBehaviour.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/AnimBackground.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/PlayerController.cs",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/Scripts/BulleBehaviour.cs",
+		"/D/Cours/M2/Transmédia et enjeux postmodernes/Cours.txt",
+		"/C/Users/Khamsou'/AppData/Local/Temp/mondrian.p8",
+		"/D/Cours/M2/Unity/Where Is Home/Assets/TeleporterScript.cs",
+		"/D/Cours/M2/Unity/Where Is Home/readme.txt",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSTargeter.cs",
+		"/D/Cours/M2/Unity/Exo_1/Assets/Scripts/BulleBehaviour.cs",
+		"/D/Assets/Textures/SNES - Earthbound Mother 2 - Battle Backgrounds/000(README).txt",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/AudioManager.cs",
+		"/D/Cours/M2/Unity/Exo_1/Assets/Scripts/BulletBehaviour.cs",
+		"/D/Cours/M2/Mémoire 2/Idées jeu/monde.txt",
+		"/D/Emulation/PC/DOOM/mods/readme.txt",
+		"/D/Cours/M2/Unity/Exo_111/Exo_1/Assets/Scripts/PlayerController.cs",
+		"/D/Cours/M2/Unity/Exo_111/Exo_1/Assets/Scripts/BulletBehaviour.cs",
+		"/D/Cours/M2/Unity/Exo_1/Assets/Scripts/test.cs",
+		"/D/Emulation/PC/DOOM/gzdoom/gzdoom-Khamsou.ini",
+		"/D/Cours/M2/Unity/Exo_1/Assets/Scripts/PlatformCollider.cs",
+		"/D/Cours/M2/Unity/Exo_1/Exo_1.sublime-project",
+		"/D/Cours/M2/GUERRE/Jam/guerre_archive/guerre.sublime-project",
+		"/D/Cours/M2/Unity/Exo 1/Exo_1/Assets/Scripts/test.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/Intro.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/CursorController.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/FPSTargetSoldier.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/ProjectileScript.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/EndingScript.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/CameraShake.cs",
+		"/D/Projects/firewalkwithme/Final Ludum Dare/buck.lua",
+		"/D/Projects/firewalkwithme/Final Ludum Dare/game.lua",
+		"/D/Projects/firewalkwithme/Final Ludum Dare/menu.lua",
+		"/D/Projects/firewalkwithme/Final Ludum Dare/main.lua",
+		"/C/Users/Khamsou'/Desktop/love/sousmarin.lua",
+		"/C/Users/Khamsou'/Desktop/love/game.lua",
+		"/C/Users/Khamsou'/Desktop/love/main.lua",
+		"/D/Projects/applestore/applestore/Assets/Scripts/test.cs",
+		"/C/Users/Khamsou'/Desktop/love/main_new.lua",
+		"/D/Projects/firewalkwithme/Final Ludum Dare/musicManager.lua",
+		"/D/Cours/M2/Mémoire 2/objectifs.txt",
+		"/D/Idées/ah ouais.txt",
+		"/D/Cours/M2/Mémoire 2/Fiches de lecture/désenchantement.txt",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/InterfaceController.cs",
+		"/C/Users/Khamsou'/AppData/Local/Temp/idees.txt",
+		"/D/Projects/gamepratic2017/Assets/Rules/SoundManager.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/PostProcessingTweaker.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/UITargetController.cs",
+		"/D/Cours/M1/S2 - Arrault/Corpus iconographiques/Every 5 years the same dream.txt",
+		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Patch iO/io.nfo",
+		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/R2R/R2R.txt",
+		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/Ableton972.nfo",
+		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Read Me.txt",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Lucas/Fx Explosion Pack/Script/DestroyEffect.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/PostProcessing/Editor/Models/GrainModelEditor.cs",
+		"/D/Écriture/idées/liberte.txt",
+		"/D/Projects/gamepratic2017/Assets/Rules/GameMode2.cs",
+		"/D/Cours/M2/GUERRE/Jam/idees.txt",
+		"/D/Projects/gamepratic2017/Assets/Rules/SpriteOutline.cs",
+		"/D/Projects/gamepratic2017/Assets/Rules/Madeleine.cs",
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/PostProcessing/Runtime/PostProcessingProfile.cs"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http",
+			"khamsou",
+			"true",
+			"public",
+			"targetDir",
+			"position",
+			"rigidbody",
+			"body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "planets.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/FirstPersonController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3003,
+								3003
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"2643,2646": "Use 'var' keyword",
+								"2718,2720": "Convert to '?:' expression",
+								"371,388": "Convert to constant",
+								"429,446": "Convert to constant",
+								"487,496": "Convert to constant",
+								"535,544": "Convert to constant"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 65.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/GravityAttractor.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"143,150": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/GravityBody.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"183,200": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"982,987": "Use 'var' keyword"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/GameController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"181,189": "Name should have prefix '_'. (Rule 'Fields').",
+								"212,219": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "credits.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"auto_name": "3D Models",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Khamsou'/Desktop/save_perso.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1300,
+								1300
+							]
+						],
+						"settings":
+						{
+							"auto_name": "* {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 950.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/wp-links-opml.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/.htaccess",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/Scripts/MovingNPC.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								859,
+								859
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"255,260": "The private field 'speed' is never assigned",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"529,534": "Variable could be moved to a nested scope",
+								"643,646": "Use 'var' keyword",
+								"718,720": "Convert to '?:' expression"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Assets/Scripts/InteractableItemBehaviour.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"280,285": "Convert to constant"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 136.0
+	},
+	"pinned_build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"project": "planets.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$constructor"
+			]
+		],
+		"width": 1165.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 164.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

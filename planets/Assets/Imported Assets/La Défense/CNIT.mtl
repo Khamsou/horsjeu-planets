@@ -1,0 +1,492 @@
+# Alias Wavefront MTL File Exported from SketchUp
+# with OBJexporter (c) 2013 TIG
+# Made for 'CNIT.obj'
+
+newmtl Default_Material
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl CnitTop
+Ka 0.619608 0.603922 0.568627
+Kd 0.619608 0.603922 0.568627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTop.PNG
+
+newmtl CnitTopC
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC.PNG
+
+newmtl fullsize
+Ka 0.533333 0.533333 0.517647
+Kd 0.533333 0.533333 0.517647
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/fullsize.PNG
+
+newmtl cnit_nuage
+Ka 0.478431 0.541176 0.631373
+Kd 0.478431 0.541176 0.631373
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/cnit_nuage.PNG
+
+newmtl Google_Earth_Snapshot1
+Ka 0.439216 0.439216 0.439216
+Kd 0.439216 0.439216 0.439216
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/Google_Earth_Snapshot1.PNG
+
+newmtl Google_Earth_Snapshot2
+Ka 0.439216 0.439216 0.439216
+Kd 0.439216 0.439216 0.439216
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/Google_Earth_Snapshot2.PNG
+
+newmtl Black
+Ka 0 0 0
+Kd 0 0 0
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl DarkGoldenrod
+Ka 0.721569 0.52549 0.0431373
+Kd 0.721569 0.52549 0.0431373
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl Gray6
+Ka 0.376471 0.376471 0.376471
+Kd 0.376471 0.376471 0.376471
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl Beige1
+Ka 0.827451 0.741176 0.564706
+Kd 0.827451 0.741176 0.564706
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl Brown
+Ka 0.466667 0.345098 0.211765
+Kd 0.466667 0.345098 0.211765
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl Charcoal
+Ka 0.137255 0.137255 0.137255
+Kd 0.137255 0.137255 0.137255
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl Redwood
+Ka 0.654902 0.396078 0.321569
+Kd 0.654902 0.396078 0.321569
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+newmtl jean_blue
+Ka 0.141176 0.184314 0.258824
+Kd 0.141176 0.184314 0.258824
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+
+#Distorted-Textures
+newmtl CnitTop1
+Ka 0.619608 0.603922 0.568627
+Kd 0.619608 0.603922 0.568627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTop1.PNG
+
+newmtl CnitTop2
+Ka 0.619608 0.603922 0.568627
+Kd 0.619608 0.603922 0.568627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTop2.PNG
+
+newmtl CnitTopC1
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC1.PNG
+
+newmtl CnitTopC2
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC2.PNG
+
+newmtl CnitTopC3
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC3.PNG
+
+newmtl CnitTopC4
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC4.PNG
+
+newmtl CnitTopC5
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC5.PNG
+
+newmtl CnitTopC6
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC6.PNG
+
+newmtl CnitTopC7
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC7.PNG
+
+newmtl CnitTopC8
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC8.PNG
+
+newmtl CnitTopC9
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC9.PNG
+
+newmtl CnitTopC10
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC10.PNG
+
+newmtl CnitTopC11
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC11.PNG
+
+newmtl CnitTopC12
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC12.PNG
+
+newmtl CnitTopC13
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC13.PNG
+
+newmtl CnitTopC14
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC14.PNG
+
+newmtl CnitTopC15
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC15.PNG
+
+newmtl CnitTopC16
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC16.PNG
+
+newmtl CnitTopC17
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC17.PNG
+
+newmtl CnitTopC18
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC18.PNG
+
+newmtl CnitTopC19
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC19.PNG
+
+newmtl CnitTopC20
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC20.PNG
+
+newmtl CnitTopC21
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC21.PNG
+
+newmtl CnitTopC22
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC22.PNG
+
+newmtl CnitTopC23
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC23.PNG
+
+newmtl CnitTopC24
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC24.PNG
+
+newmtl CnitTopC25
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC25.PNG
+
+newmtl CnitTopC26
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC26.PNG
+
+newmtl CnitTopC27
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC27.PNG
+
+newmtl CnitTopC28
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC28.PNG
+
+newmtl CnitTopC29
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC29.PNG
+
+newmtl CnitTopC30
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC30.PNG
+
+newmtl CnitTopC31
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC31.PNG
+
+newmtl CnitTopC32
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC32.PNG
+
+newmtl CnitTopC33
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC33.PNG
+
+newmtl CnitTopC34
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC34.PNG
+
+newmtl CnitTopC35
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC35.PNG
+
+newmtl CnitTopC36
+Ka 0.964706 0.964706 0.968627
+Kd 0.964706 0.964706 0.968627
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/CnitTopC36.PNG
+
+newmtl cnit_nuage1
+Ka 0.478431 0.541176 0.631373
+Kd 0.478431 0.541176 0.631373
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/cnit_nuage1.PNG
+
+newmtl cnit_nuage2
+Ka 0.478431 0.541176 0.631373
+Kd 0.478431 0.541176 0.631373
+Ks 0.333 0.333 0.333
+Ns 0
+d 1
+Tr 1
+map_Kd CNIT_Textures/cnit_nuage2.PNG
+
+#EOF
