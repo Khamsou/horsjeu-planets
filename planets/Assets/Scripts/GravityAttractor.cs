@@ -5,16 +5,21 @@ using UnityEngine;
 public class GravityAttractor : MonoBehaviour {
 
 	[SerializeField] private float gravity = -4f;
-	[SerializeField] private float rotationSpeed = 1f;
+	[SerializeField] private float rotationSpeed = 0.25f;
 
 
 	void Update ()
 	{
-		// transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
+		transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
 	}
 
 	public void Attract(Rigidbody body)
 	{
+		if (body.transform.parent != transform)
+		{
+			body.transform.parent = transform;
+		}
+
 		Vector3 gravityUp = (body.position - transform.position).normalized;
 		Vector3 localUp = body.transform.up;
 
@@ -25,6 +30,6 @@ public class GravityAttractor : MonoBehaviour {
 		Quaternion wantedRotation = Quaternion.FromToRotation(localUp, gravityUp) * body.rotation;
 		 
 		//then rotate
-		body.rotation = Quaternion.Lerp(body.rotation, wantedRotation, Time.deltaTime * 0.5f);
+		body.rotation = Quaternion.Lerp(body.rotation, wantedRotation, Time.deltaTime);
 	}
 }
