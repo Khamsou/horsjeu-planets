@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class GravityAttractor : MonoBehaviour {
 
+	[Header("Variables")]
 	[SerializeField] private float gravity = -4f;
-	[SerializeField] private float rotationSpeed = 0.25f;
+	[SerializeField] private float rotationSpeed = 0.1f;
+	[SerializeField] private float orbitSpeed = 0.1f;
 
 
 	void Update ()
 	{
+		// Rotation personnelle
 		transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
 	}
 
@@ -32,4 +35,5 @@ public class GravityAttractor : MonoBehaviour {
 		//then rotate
 		body.rotation = Quaternion.Lerp(body.rotation, wantedRotation, Time.deltaTime);
 	}
+
 }
