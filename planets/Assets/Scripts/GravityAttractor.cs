@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GravityAttractor : MonoBehaviour {
 
-	public float gravity = -4f;
+	[SerializeField] private float gravity = -4f;
+	[SerializeField] private float rotationSpeed = 1f;
+
+
+	void Update ()
+	{
+		// transform.Rotate(transform.up, rotationSpeed * Time.deltaTime);
+	}
 
 	public void Attract(Rigidbody body)
 	{
@@ -13,7 +20,11 @@ public class GravityAttractor : MonoBehaviour {
 
 		// Gravité
 		body.GetComponent<Rigidbody>().AddForce(gravityUp * gravity);
+
 		// Rotation en fonction du centre de la planète
-		body.rotation = Quaternion.FromToRotation(localUp, gravityUp) * body.rotation;
+		Quaternion wantedRotation = Quaternion.FromToRotation(localUp, gravityUp) * body.rotation;
+		 
+		//then rotate
+		body.rotation = Quaternion.Lerp(body.rotation, wantedRotation, Time.deltaTime * 0.5f);
 	}
 }
