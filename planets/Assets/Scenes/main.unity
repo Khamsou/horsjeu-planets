@@ -2236,47 +2236,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 42.09
+      value: 55.41
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 34.2
+      value: 34.08699
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.7
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.48896584
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.43184638
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.5680724
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.501712
       objectReference: {fileID: 0}
     - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
       propertyPath: m_RootOrder
       value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4692398384491144, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32ca1cbcb17151540914b959ddcecff3, type: 2}
