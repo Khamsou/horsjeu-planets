@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4692398384491144}
   - component: {fileID: 33263983575639160}
-  - component: {fileID: 135374282025727602}
   - component: {fileID: 23430599774539780}
   - component: {fileID: 114066139545947908}
+  - component: {fileID: 64393185856518542}
   m_Layer: 8
   m_Name: Jungle
   m_TagString: Planet
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101497778605914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.09, y: 34.2, z: 32.3}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,7 +83,21 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101497778605914}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: c40a6f6cfca748e41b6077e571910287, type: 3}
+--- !u!64 &64393185856518542
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101497778605914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c40a6f6cfca748e41b6077e571910287, type: 3}
 --- !u!114 &114066139545947908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,15 +110,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -5
---- !u!135 &135374282025727602
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1101497778605914}
-  m_Material: {fileID: 13400000, guid: 1dea7880b7dccd4488d647f75b004f25, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  rotationSpeed: 1
