@@ -7,20 +7,35 @@ public class Ellipse  {
 
 	[SerializeField] private float xAxis;
 	[SerializeField] private float yAxis;
+	public float xAngle;
+	public float yAngle;
+	public float zAngle;
 
-	public Ellipse (float xAxis, float yAxis)
+	public Ellipse (float xAxis, float yAxis, float height)
 	{
 		this.xAxis = xAxis;
 		this.yAxis = yAxis;
+		this.xAngle = xAngle;
+		this.yAngle = yAngle;
+		this.zAngle = zAngle;
 	}
 
-	public Vector2 Evaluate(float t)
+	public Vector3 Evaluate(float t)
 	{
-		float angle = Mathf.Deg2Rad * 360f * t;
-		float x = Mathf.Sin(angle) * xAxis;
-		float y = Mathf.Cos(angle) * yAxis;
+		float currentEllipseAngle = Mathf.Deg2Rad * 360f * t;
+		Quaternion xRotAngle = Quaternion.AngleAxis(xAngle, Vector3.right);
+		Quaternion yRotAngle = Quaternion.AngleAxis(yAngle, Vector3.up);
+		Quaternion zRotAngle = Quaternion.AngleAxis(zAngle, Vector3.forward);
 
-		return new Vector2(x,y);
+		float x = Mathf.Sin(currentEllipseAngle) * xAxis;
+		float y = Mathf.Cos(currentEllipseAngle) * yAxis;
+
+		Vector3 newPosition = new Vector3(x,y,0f);
+		newPosition = xRotAngle * newPosition;
+		newPosition = yRotAngle * newPosition;
+		newPosition = zRotAngle * newPosition;
+
+		return newPosition;
 	}
 
 }

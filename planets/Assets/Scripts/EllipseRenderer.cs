@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(LineRenderer))]
 public class EllipseRenderer : MonoBehaviour {
 
@@ -24,6 +25,7 @@ public class EllipseRenderer : MonoBehaviour {
 	private void CalculateEllipse ()
 	{
 		Vector3[] points = new Vector3[segments + 1];
+		
 		for (int i=0; i < segments; i++)
 		{
 			// Détermine un angle en fonction du pourcentage du parcours du tableau

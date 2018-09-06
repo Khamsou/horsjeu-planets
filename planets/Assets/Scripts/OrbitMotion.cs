@@ -11,6 +11,7 @@ public class OrbitMotion : MonoBehaviour
 	private LineRenderer lr;
 
 	[Header("Variables")]
+	[SerializeField] private Vector3 orbitShift;
 	[Range(0f,1f)]
 	[SerializeField] private float orbitProgress = 0f;
 	[SerializeField] private float orbitPeriod = 3f;
@@ -35,11 +36,15 @@ public class OrbitMotion : MonoBehaviour
 	void CalculateEllipse ()
 	{
 		Vector3[] points = new Vector3[RendererSegmentCount + 1];
+
 		for (int i=0; i < RendererSegmentCount; i++)
 		{
+			float t = (float)i / (float)RendererSegmentCount;
+
 			// Détermine un angle en fonction du pourcentage du parcours du tableau
-			Vector2 position2D = orbitPath.Evaluate((float)i / (float)RendererSegmentCount);
-			points[i] = planetOrbitingAround.transform.position + new Vector3(position2D.x, 0f, position2D.y);
+			Vector3 position3D = orbitPath.Evaluate(t);
+
+			points[i] = planetOrbitingAround.transform.position + position3D - orbitShift;
 		}
 		// On ferme la boucle
 		points[RendererSegmentCount] = points[0];
@@ -52,8 +57,8 @@ public class OrbitMotion : MonoBehaviour
 
 	void SetOrbitingObjectPosition ()
 	{
-		Vector2 orbitPos = orbitPath.Evaluate(orbitProgress);
-		transform.position = planetOrbitingAround.transform.position + new Vector3(orbitPos.x, 0f, orbitPos.y);	
+		Vector3 orbitPos = orbitPath.Evaluate(orbitProgress);
+		transform.position = planetOrbitingAround.transform.position + orbitPos - orbitShift;	
 	}
 
 	IEnumerator AnimateOrbit ()
