@@ -4,24 +4,44 @@
 		"selected_items":
 		[
 			[
+				"angl",
+				"AngleAxis(float angle, Vector3 axis)\tQuaternion"
+			],
+			[
+				"An",
+				"AngleAxis(float angle, Vector3 axis)\tQuaternion"
+			],
+			[
 				"orbit",
-				"orbitProgress\tfloat"
+				"orbitPath\tEllipse"
+			],
+			[
+				"Vector3",
+				"Vector3(float x, float y, float z)\tVector3(float x, float y, float z)"
+			],
+			[
+				"VEc",
+				"Vector3()\tVector3()"
+			],
+			[
+				"orbitA",
+				"orbitAxis\tVector3"
+			],
+			[
+				"Vector",
+				"Vector3\tVector3"
+			],
+			[
+				"position",
+				"position3D\tVector3"
 			],
 			[
 				"orbi",
 				"orbitPos\tVector2"
 			],
 			[
-				"Vector3",
-				"Vector3(float x, float y)\tVector3(float x, float y)"
-			],
-			[
 				"Game",
 				"GameObject\tGameObject"
-			],
-			[
-				"Vector",
-				"Vector3(float x, float y)\tVector3(float x, float y)"
 			],
 			[
 				"Line",
@@ -494,26 +514,6 @@
 			[
 				"hori",
 				"horizontalAxis\tfloat"
-			],
-			[
-				"verti",
-				"verticalAxis\tfloat"
-			],
-			[
-				"vertical",
-				"verticalTilt\tfloat"
-			],
-			[
-				"camera",
-				"cameraTransform\tTransform"
-			],
-			[
-				"remo",
-				"Remove(T item)\tbool"
-			],
-			[
-				"Anima",
-				"Animator\tAnimator"
 			]
 		]
 	},
@@ -550,17 +550,17 @@
 			"file": "Assets/Scripts/OrbitMotion.cs",
 			"settings":
 			{
-				"buffer_size": 1961,
+				"buffer_size": 1988,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/EllipseRenderer.cs",
+			"file": "Assets/Scenes/main.unity",
 			"settings":
 			{
-				"buffer_size": 1141,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 157622,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -568,7 +568,7 @@
 			"file": "Assets/Scripts/Ellipse.cs",
 			"settings":
 			{
-				"buffer_size": 489,
+				"buffer_size": 1057,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -886,6 +886,7 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/EllipseRenderer.cs",
 		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/Ellipse.cs",
 		"/D/Projects/horsjeu-planets/.gitignore",
 		"/C/Users/Khamsou'/AppData/Local/Temp/fz3temp-2/.htaccess",
@@ -1012,8 +1013,7 @@
 		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/Ableton972.nfo",
 		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Read Me.txt",
 		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Lucas/Fx Explosion Pack/Script/DestroyEffect.cs",
-		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/PostProcessing/Editor/Models/GrainModelEditor.cs",
-		"/D/Écriture/idées/liberte.txt"
+		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/PostProcessing/Editor/Models/GrainModelEditor.cs"
 	],
 	"find":
 	{
@@ -1031,6 +1031,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"y",
+			"angle",
+			"2",
+			"height",
+			"-1",
+			"x",
+			"1 +",
+			";\n",
 			"segments",
 			"this.",
 			"http",
@@ -1058,7 +1066,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1207,7 +1215,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1216,15 +1224,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1961,
+						"buffer_size": 1988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								837,
-								837
+								1271,
+								1271
+							],
+							[
+								1678,
+								1678
 							]
 						],
 						"settings":
@@ -1234,13 +1246,13 @@
 								"225,245": "The private field 'planetOrbitingAround' is never assigned",
 								"26,31": "Using directive is not used by code and can be removed safely.",
 								"281,290": "The private field 'orbitPath' is never assigned",
-								"556,576": "The private field 'RendererSegmentCount' is never assigned",
-								"869,876": "Use 'var' keyword"
+								"602,622": "The private field 'RendererSegmentCount' is never assigned",
+								"915,922": "Use 'var' keyword"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1248,39 +1260,32 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/Scripts/EllipseRenderer.cs",
+					"file": "Assets/Scenes/main.unity",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1141,
+						"buffer_size": 157622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1035,
-								529
+								176,
+								176
 							]
 						],
 						"settings":
 						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"227,234": "The private field 'ellipse' is never assigned",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"331,339": "The private field 'segments' is never assigned",
-								"531,538": "Use 'var' keyword"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 30.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1289,15 +1294,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 489,
+						"buffer_size": 1057,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								559,
+								559
 							]
 						],
 						"settings":
@@ -1307,7 +1312,15 @@
 								"0,5": "Using directive is not used by code and can be removed safely.",
 								"159,164": "Convert to readonly",
 								"198,203": "Convert to readonly",
-								"26,31": "Using directive is not used by code and can be removed safely."
+								"219,225": "Name should have prefix '_'. (Rule 'Fields').",
+								"241,247": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"263,269": "Name should have prefix '_'. (Rule 'Fields').",
+								"321,327": "Parameter 'height' is never used",
+								"378,382": "CS1717:Assignment made to same variable",
+								"402,406": "CS1717:Assignment made to same variable",
+								"426,430": "CS1717:Assignment made to same variable",
+								"862,869": "Use 'var' keyword"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
