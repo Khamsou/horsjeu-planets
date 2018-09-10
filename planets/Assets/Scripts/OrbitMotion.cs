@@ -79,4 +79,12 @@ public class OrbitMotion : MonoBehaviour
 			yield return null;
 		}
 	}
+
+	void OnValidate ()
+	{
+		if (lr !=null && orbitActive)
+		{
+			CalculateEllipse();
+		}
+	}
 }
