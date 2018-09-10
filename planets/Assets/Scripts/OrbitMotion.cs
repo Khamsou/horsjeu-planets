@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
+[ExecuteInEditMode]
 public class OrbitMotion : MonoBehaviour
 {
 	[Header("References")]
@@ -11,7 +12,7 @@ public class OrbitMotion : MonoBehaviour
 	private LineRenderer lr;
 
 	[Header("Variables")]
-	[SerializeField] private Vector3 orbitShift;
+	[SerializeField] private Vector3 orbitOffset;
 	[Range(0f,1f)]
 	[SerializeField] private float orbitProgress = 0f;
 	[SerializeField] private float orbitPeriod = 3f;
@@ -44,7 +45,7 @@ public class OrbitMotion : MonoBehaviour
 			// Détermine un angle en fonction du pourcentage du parcours du tableau
 			Vector3 position3D = orbitPath.Evaluate(t);
 
-			points[i] = planetOrbitingAround.transform.position + position3D - orbitShift;
+			points[i] = planetOrbitingAround.transform.position + position3D - orbitOffset;
 		}
 		// On ferme la boucle
 		points[RendererSegmentCount] = points[0];
@@ -58,7 +59,7 @@ public class OrbitMotion : MonoBehaviour
 	void SetOrbitingObjectPosition ()
 	{
 		Vector3 orbitPos = orbitPath.Evaluate(orbitProgress);
-		transform.position = planetOrbitingAround.transform.position + orbitPos - orbitShift;	
+		transform.position = planetOrbitingAround.transform.position + orbitPos - orbitOffset;	
 	}
 
 	IEnumerator AnimateOrbit ()
