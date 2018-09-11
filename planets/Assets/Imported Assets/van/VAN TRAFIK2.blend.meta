@@ -1,26 +1,56 @@
 fileFormatVersion: 2
-guid: 90225a0024b3e5b4783c64932485ed53
+guid: 55863b10edbdd0745af4106a894b2ced
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: gold.001
-    2100002: Material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
+    100000: 0
+    100002: 1
+    100004: 2
+    100006: 2_001
+    100008: 2_002
+    100010: //RootNode
+    400000: 0
+    400002: 1
+    400004: 2
+    400006: 2_001
+    400008: 2_002
+    400010: //RootNode
+    2100000: Standard_2__veh_kendo_van_01_d_dds
+    2100002: Standard_3__glass_png
+    2100004: Standard_1__veh_kendo_van_02_s_dds
+    2300000: 0
+    2300002: 1
+    2300004: 2
+    2300006: 2_001
+    2300008: 2_002
+    3300000: 0
+    3300002: 1
+    3300004: 2
+    3300006: 2_001
+    3300008: 2_002
+    4300000: 2_002
+    4300002: 2_001
+    4300004: 2
+    4300006: 0
+    4300008: 1
+    7400000: Default Take
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: a4b0cd1127dfc724daed4a58fa9da38c, type: 2}
+      name: Standard_1__veh_kendo_van_02_s_dds
+    second: {fileID: 2100000, guid: b82aa8bf237a56e4f8dc072f1021a998, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: gold.001
-    second: {fileID: 2100000, guid: d1f7b23fee8f9314885fe6649f69c5a5, type: 2}
+      name: Standard_2__veh_kendo_van_01_d_dds
+    second: {fileID: 2100000, guid: d23631d3c2352fd419df723bead136e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standard_3__glass_png
+    second: {fileID: 2100000, guid: b82aa8bf237a56e4f8dc072f1021a998, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -51,7 +81,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 4
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -72,7 +102,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -97,7 +127,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

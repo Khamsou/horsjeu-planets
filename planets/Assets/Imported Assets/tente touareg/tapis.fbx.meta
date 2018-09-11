@@ -1,26 +1,20 @@
 fileFormatVersion: 2
-guid: 90225a0024b3e5b4783c64932485ed53
+guid: 3510fd6909aa4794c842eaf7c1e1d11d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: gold.001
-    2100002: Material
+    2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: tapis
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: a4b0cd1127dfc724daed4a58fa9da38c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold.001
-    second: {fileID: 2100000, guid: d1f7b23fee8f9314885fe6649f69c5a5, type: 2}
+      name: No Name
+    second: {fileID: 2100000, guid: 218f16942479ab6439f60e669af7a7c3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -51,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 4
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
