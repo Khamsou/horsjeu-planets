@@ -10,6 +10,7 @@ public class FirstPersonController : MonoBehaviour {
 	private Transform cameraTransform;
 	private Transform flagHolder;
 	private Rigidbody rb;
+	private Animator myAnimator;
 
 	[Header("Variables")]
 	[SerializeField] private float mouseSensitivityX = 3.5f;
@@ -38,6 +39,7 @@ public class FirstPersonController : MonoBehaviour {
 		cameraTransform = Camera.main.transform;
 		flagHolder = transform.Find("FlagHolder");
 		rb = GetComponent<Rigidbody>();
+		myAnimator = GetComponentInChildren<Animator>();
 	}
 
 	void Update ()
@@ -59,7 +61,6 @@ public class FirstPersonController : MonoBehaviour {
 		Vector3 targetMoveAmount = moveDirection * walkSpeed;
 		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, 0.15f);
 
-
 		// Lâcher de drapeau
 		if (hasFlag)
 		{
@@ -74,6 +75,8 @@ public class FirstPersonController : MonoBehaviour {
 		{
 			gravityScript.ChangePlanetAttractedTo();
 		}
+
+		UpdateAnimator();
 	}
 
 	void FixedUpdate ()
@@ -147,5 +150,12 @@ public class FirstPersonController : MonoBehaviour {
 		flag.transform.localScale = Vector3.one;
 
 		hasFlag = false;
+	}
+
+	private void UpdateAnimator()
+	{
+		myAnimator.SetBool("grounded", grounded);
+		myAnimator.SetFloat("magnitude", rb.velocity.magnitude);
+		print(rb.velocity.magnitude);
 	}
 }
