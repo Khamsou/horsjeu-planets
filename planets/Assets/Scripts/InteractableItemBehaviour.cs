@@ -10,6 +10,7 @@ public class InteractableItemBehaviour : MonoBehaviour
 
 	[Header("Variables")]
 	[SerializeField] private float force = 5f;
+	[SerializeField] private float forceRotation = 0f;
 
 	void Awake ()
 	{
@@ -25,6 +26,9 @@ public class InteractableItemBehaviour : MonoBehaviour
 	            // Vecteur légèrement en hauteur
 	            Vector3 shootDirection = (contact.normal + transform.up).normalized;
 	            rb.AddForce(shootDirection * force, ForceMode.Impulse);
+
+	            Vector3 shootRotation = transform.up * forceRotation;
+	            rb.AddTorque(shootRotation, ForceMode.Impulse);
 	        }
 		}
 	}

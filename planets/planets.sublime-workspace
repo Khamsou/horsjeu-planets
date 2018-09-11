@@ -4,16 +4,64 @@
 		"selected_items":
 		[
 			[
+				"target",
+				"targetDirection\tVector3"
+			],
+			[
+				"is",
+				"isInTheZone\tbool"
+			],
+			[
+				"Ra",
+				"Raycast(Ray ray, float maxDistance)\tbool"
+			],
+			[
+				"AddForce",
+				"AddForce(Vector3 force)\tvoid"
+			],
+			[
+				"find",
+				"FindChild(string n)\tTransform"
+			],
+			[
+				"particle",
+				"particleSystem\tComponent { get; }"
+			],
+			[
+				"for",
+				"forceRotation\tfloat"
+			],
+			[
+				"shoot",
+				"shootRotation\tVector3"
+			],
+			[
+				"force",
+				"forceRotation\tfloat"
+			],
+			[
+				"Add",
+				"AddTorque(Vector3 torque)\tvoid"
+			],
+			[
+				"orbit",
+				"orbitActive\tbool"
+			],
+			[
+				"grav",
+				"gravityAttractorTransform\tTransform"
+			],
+			[
+				"thisBody",
+				"thisBodyRB\tRigidbody"
+			],
+			[
 				"angl",
 				"AngleAxis(float angle, Vector3 axis)\tQuaternion"
 			],
 			[
 				"An",
 				"AngleAxis(float angle, Vector3 axis)\tQuaternion"
-			],
-			[
-				"orbit",
-				"orbitPath\tEllipse"
 			],
 			[
 				"Vector3",
@@ -96,10 +144,6 @@
 				"Scale(Vector3 a, Vector3 b)\tVector3"
 			],
 			[
-				"Add",
-				"AddForce(Vector3 force, ForceMode mode)\tvoid"
-			],
-			[
 				"Rigidb",
 				"Rigidbody\tRigidbody"
 			],
@@ -122,10 +166,6 @@
 			[
 				"new",
 				"newPlanet\tGameObject"
-			],
-			[
-				"for",
-				"foreach\tforeach"
 			],
 			[
 				"planet",
@@ -174,10 +214,6 @@
 			[
 				"scr",
 				"scroll_position"
-			],
-			[
-				"force",
-				"forceMultiplier\tfloat"
 			],
 			[
 				"For",
@@ -246,10 +282,6 @@
 			[
 				"Clo",
 				"ClosestPoint\tVector3"
-			],
-			[
-				"is",
-				"isInit\tbool"
 			],
 			[
 				"Force",
@@ -482,38 +514,6 @@
 			[
 				"glitch",
 				"glitch01Image\tImage"
-			],
-			[
-				"Ne",
-				"GetNextAnimatorStateInfo(int layerIndex)\tAnimatorStateInfo"
-			],
-			[
-				"Is",
-				"IsInTransition(int layerIndex)\tbool"
-			],
-			[
-				"set",
-				"SetBool(string name, bool value)\tvoid"
-			],
-			[
-				"togl",
-				"toggleThreat()\tvoid"
-			],
-			[
-				"UI",
-				"UI_Threat\tGameObject"
-			],
-			[
-				"GetCurren",
-				"GetCurrentAnimatorStateInfo(int layerIndex)\tAnimatorStateInfo"
-			],
-			[
-				"newWan",
-				"newWantedXRot\tfloat"
-			],
-			[
-				"hori",
-				"horizontalAxis\tfloat"
 			]
 		]
 	},
@@ -541,8 +541,17 @@
 			"file": "Assets/Scripts/GravityAttractor.cs",
 			"settings":
 			{
-				"buffer_size": 937,
+				"buffer_size": 910,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/GravityBody.cs",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
@@ -550,17 +559,26 @@
 			"file": "Assets/Scripts/OrbitMotion.cs",
 			"settings":
 			{
-				"buffer_size": 1988,
+				"buffer_size": 2457,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scenes/main.unity",
+			"file": "Assets/WanderingSpaceObject.cs",
 			"settings":
 			{
-				"buffer_size": 157622,
-				"encoding": "UTF-8",
+				"buffer_size": 1544,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/SandCollision.cs",
+			"settings":
+			{
+				"buffer_size": 398,
+				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
@@ -574,10 +592,10 @@
 			}
 		},
 		{
-			"file": "Assets/Scripts/GravityBody.cs",
+			"file": "Assets/Scripts/EllipseRenderer.cs",
 			"settings":
 			{
-				"buffer_size": 1776,
+				"buffer_size": 1164,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -604,7 +622,7 @@
 			"file": "Assets/Scripts/InteractableItemBehaviour.cs",
 			"settings":
 			{
-				"buffer_size": 729,
+				"buffer_size": 910,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -886,6 +904,9 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/horsjeu-planets/planets/Assets/WanderingSpaceObject.cs",
+		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/FlagBehaviour.cs",
+		"/D/Projects/horsjeu-planets/planets/Assets/Scenes/main.unity",
 		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/EllipseRenderer.cs",
 		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/Ellipse.cs",
 		"/D/Projects/horsjeu-planets/.gitignore",
@@ -1010,10 +1031,7 @@
 		"/D/Cours/M1/S2 - Arrault/Corpus iconographiques/Every 5 years the same dream.txt",
 		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Patch iO/io.nfo",
 		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/R2R/R2R.txt",
-		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/Ableton972.nfo",
-		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Read Me.txt",
-		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Lucas/Fx Explosion Pack/Script/DestroyEffect.cs",
-		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/PostProcessing/Editor/Models/GrainModelEditor.cs"
+		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/Ableton972.nfo"
 	],
 	"find":
 	{
@@ -1031,6 +1049,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hasDirection",
+			"x",
+			"Errand",
+			"gamecontroll",
+			"changeplanet",
 			"y",
 			"angle",
 			"2",
@@ -1066,7 +1089,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1094,7 +1117,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1110,8 +1133,8 @@
 						"selection":
 						[
 							[
-								3003,
-								3003
+								2714,
+								2641
 							]
 						],
 						"settings":
@@ -1132,10 +1155,10 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 65.0,
+						"translation.y": 1815.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1144,68 +1167,26 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 937,
+						"buffer_size": 910,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								934,
-								934
+								25,
+								25
 							]
 						],
 						"settings":
 						{
 							"oops":
 							{
-								"112,125": "'MonoBehaviour' is not a known identifier",
-								"131,137": "'Header' is not a known identifier",
-								"150,151": "Error: ?",
-								"154,168": "Error: ?",
-								"201,215": "Error: ?",
-								"301,310": "'transform' is not a known identifier",
-								"311,317": "'?' does not contain a definition for 'Rotate'",
-								"318,327": "'transform' is not a known identifier",
-								"328,330": "'?' does not contain a definition for 'up'",
-								"348,352": "'Time' is not a known identifier",
-								"353,362": "Error: Single",
-								"363,364": "'?' does not contain a definition for 'Rotate'",
-								"390,399": "'Rigidbody' is not a known identifier",
-								"420,429": "'Rigidbody' does not contain a definition for 'transform'",
-								"430,436": "'?' does not contain a definition for 'parent'",
-								"440,449": "Error: Boolean",
-								"463,472": "'Rigidbody' does not contain a definition for 'transform'",
-								"473,479": "'?' does not contain a definition for 'parent'",
-								"482,491": "'transform' is not a known identifier",
-								"500,507": "'Vector3' is not a known identifier",
-								"526,534": "'Rigidbody' does not contain a definition for 'position'",
-								"537,546": "'transform' is not a known identifier",
-								"547,555": "Error: Int32",
-								"556,557": "Error: Int32",
-								"557,567": "'Int32' does not contain a definition for 'normalized'",
-								"571,578": "'Vector3' is not a known identifier",
-								"594,603": "'Rigidbody' does not contain a definition for 'transform'",
-								"604,606": "'?' does not contain a definition for 'up'",
-								"642,651": "'Rigidbody' is not a known identifier",
-								"652,653": "'Rigidbody' does not contain a definition for 'GetComponent'",
-								"654,655": "'Rigidbody' does not contain a definition for 'GetComponent'",
-								"655,663": "'?' does not contain a definition for 'AddForce'",
-								"66,77": "'UnityEngine' is not a known identifier",
-								"676,683": "Error: Single",
-								"684,685": "'?' does not contain a definition for 'AddForce'",
-								"739,749": "'Quaternion' is not a known identifier",
-								"767,777": "'Quaternion' is not a known identifier",
-								"778,792": "'?' does not contain a definition for 'FromToRotation'",
-								"812,813": "'?' does not contain a definition for 'FromToRotation'",
-								"820,828": "Error: Int32",
-								"857,865": "'Rigidbody' does not contain a definition for 'rotation'",
-								"868,878": "'Quaternion' is not a known identifier",
-								"879,883": "'?' does not contain a definition for 'Lerp'",
-								"889,897": "'Rigidbody' does not contain a definition for 'rotation'",
-								"915,919": "'Time' is not a known identifier",
-								"920,929": "'?' does not contain a definition for 'deltaTime'",
-								"930,931": "'?' does not contain a definition for 'Lerp'"
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"184,191": "Convert to constant",
+								"231,244": "Convert to constant",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"415,419": "Redundant condition check before assignment"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false,
@@ -1215,71 +1196,145 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/OrbitMotion.cs",
+					"file": "Assets/Scripts/GravityBody.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1988,
+						"buffer_size": 1774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1271,
-								1271
-							],
-							[
-								1678,
-								1678
+								666,
+								678
 							]
 						],
 						"settings":
 						{
 							"oops":
 							{
-								"225,245": "The private field 'planetOrbitingAround' is never assigned",
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"183,200": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"281,290": "The private field 'orbitPath' is never assigned",
-								"602,622": "The private field 'RendererSegmentCount' is never assigned",
-								"915,922": "Use 'var' keyword"
+								"982,987": "Use 'var' keyword"
 							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/Scenes/main.unity",
+					"file": "Assets/Scripts/OrbitMotion.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 157622,
+						"buffer_size": 2457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								176,
-								176
+								2357,
+								2339
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"oops":
+							{
+								"1016,1023": "Use 'var' keyword",
+								"248,268": "The private field 'planetOrbitingAround' is never assigned",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"304,313": "The private field 'orbitPath' is never assigned",
+								"626,646": "The private field 'RendererSegmentCount' is never assigned"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/WanderingSpaceObject.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								649,
+								649
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"1368,1371": "Use 'var' keyword",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"354,359": "The private field 'force' is never assigned",
+								"410,423": "Convert to constant",
+								"746,748": "Convert to '&=' expresssion"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/SandCollision.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								346
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"26,31": "Using directive is not used by code and can be removed safely."
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1289,7 +1344,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "Assets/Scripts/Ellipse.cs",
 					"semi_transient": false,
 					"settings":
@@ -1301,8 +1356,8 @@
 						"selection":
 						[
 							[
-								559,
-								559
+								1057,
+								1057
 							]
 						],
 						"settings":
@@ -1322,53 +1377,47 @@
 								"426,430": "CS1717:Assignment made to same variable",
 								"862,869": "Use 'var' keyword"
 							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "Assets/Scripts/GravityBody.cs",
+					"buffer": 8,
+					"file": "Assets/Scripts/EllipseRenderer.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1776,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								876,
-								876
+								1161,
+								1063
 							]
 						],
 						"settings":
 						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"183,200": "Name should have prefix '_'. (Rule 'Fields').",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"982,987": "Use 'var' keyword"
-							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "Assets/Scripts/GameController.cs",
 					"semi_transient": false,
 					"settings":
@@ -1400,11 +1449,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "Assets/Scripts/MovingNPC.cs",
 					"semi_transient": false,
 					"settings":
@@ -1438,24 +1487,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "Assets/Scripts/InteractableItemBehaviour.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 729,
+						"buffer_size": 910,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								639,
-								639
+								811,
+								811
 							]
 						],
 						"settings":
@@ -1464,7 +1513,8 @@
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"280,285": "Convert to constant"
+								"280,285": "Convert to constant",
+								"324,337": "Convert to constant"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -1473,11 +1523,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "credits.txt",
 					"semi_transient": false,
 					"settings":
@@ -1502,11 +1552,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 13,
 					"file": "/D/Projects/horsjeu-planets/README.md",
 					"semi_transient": false,
 					"settings":
@@ -1530,11 +1580,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
 					"file": "/D/Projects/horsjeu-planets/.gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1558,7 +1608,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
