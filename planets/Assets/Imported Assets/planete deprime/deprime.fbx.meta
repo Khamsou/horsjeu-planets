@@ -1,29 +1,38 @@
 fileFormatVersion: 2
-guid: 58119f7e9f45c2944a0b18dd33378ffd
+guid: 98e808a6ebd825440a138e999467fe4a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: larme
+    100004: planete derpime
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Ball-LP
+    400002: larme
+    400004: planete derpime
+    2100000: larme
+    2100002: "Matsol sech\xE9"
+    2300000: larme
+    2300002: planete derpime
+    3300000: larme
+    3300002: planete derpime
+    4300000: larme
+    4300002: planete derpime
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Black-Ball-Material
-    second: {fileID: 2100000, guid: fb69c479c3cec624b96dfe20d305c1b9, type: 2}
+      name: "Matsol sech\xE9"
+    second: {fileID: 2100000, guid: aa6cb0c797b07684aa7492ceeb3eb409, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: White-Ball-Material
-    second: {fileID: 2100000, guid: cff0f8a4e9c85a045be6d610d20b87b3, type: 2}
+      name: larme
+    second: {fileID: 2100000, guid: dedc008ebe932394f94935ec6f1ca2ba, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -49,13 +58,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -63,7 +72,7 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    indexFormat: 1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -75,7 +84,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

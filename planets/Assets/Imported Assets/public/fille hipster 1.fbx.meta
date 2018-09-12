@@ -1,29 +1,40 @@
 fileFormatVersion: 2
-guid: 58119f7e9f45c2944a0b18dd33378ffd
+guid: 9b1f4d5bf22b69d46b800ced54fa14f0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: gobelet
+    100004: Plane
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Ball-LP
+    400002: gobelet
+    400004: Plane
+    2100000: verre
+    2100002: fille
+    2300000: gobelet
+    2300002: Plane
+    3300000: gobelet
+    3300002: Plane
+    4300000: gobelet
+    4300002: Plane
+    7400000: Plane|PlaneAction
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Black-Ball-Material
-    second: {fileID: 2100000, guid: fb69c479c3cec624b96dfe20d305c1b9, type: 2}
+      name: fille
+    second: {fileID: 2100000, guid: bdd9db4fcef656f42820440242fdf35b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: White-Ball-Material
-    second: {fileID: 2100000, guid: cff0f8a4e9c85a045be6d610d20b87b3, type: 2}
+      name: verre
+    second: {fileID: 2100000, guid: 044957f734e6e0744a46c59077613f4e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -52,10 +63,10 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -63,19 +74,19 @@ ModelImporter:
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    indexFormat: 1
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -95,7 +106,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
