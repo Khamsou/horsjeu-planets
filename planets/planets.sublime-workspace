@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"Get",
+				"GetButtonDown(string buttonName)\tbool"
+			],
+			[
+				"Game",
+				"GameController\tGameController"
+			],
+			[
+				"GetC",
+				"GetComponentsInChildren<T>()\tT[]"
+			],
+			[
+				"AddForce",
+				"AddForce(Vector3 force, ForceMode mode)\tvoid"
+			],
+			[
+				"ne",
+				"newRotation\tQuaternion"
+			],
+			[
+				"Find",
+				"FindObjectsOfType<T>()\tT[]"
+			],
+			[
+				"game",
+				"gamePaused\tbool"
+			],
+			[
+				"GetButton",
+				"GetButtonDown(string buttonName)\tbool"
+			],
+			[
+				"de",
+				"default\tdefault"
+			],
+			[
+				"player",
+				"playerState\tImage"
+			],
+			[
+				"for",
+				"foreach\tforeach"
+			],
+			[
+				"child",
+				"GetComponentsInChildren<T>()\tT[]"
+			],
+			[
+				"tra",
+				"transform\tTransform { get; }"
+			],
+			[
+				"Vectr",
+				"Vector3\tVector3"
+			],
+			[
 				"target",
 				"targetDirection\tVector3"
 			],
@@ -16,20 +72,12 @@
 				"Raycast(Ray ray, float maxDistance)\tbool"
 			],
 			[
-				"AddForce",
-				"AddForce(Vector3 force)\tvoid"
-			],
-			[
 				"find",
 				"FindChild(string n)\tTransform"
 			],
 			[
 				"particle",
 				"particleSystem\tComponent { get; }"
-			],
-			[
-				"for",
-				"forceRotation\tfloat"
 			],
 			[
 				"shoot",
@@ -88,10 +136,6 @@
 				"orbitPos\tVector2"
 			],
 			[
-				"Game",
-				"GameObject\tGameObject"
-			],
-			[
 				"Line",
 				"LineRenderer\tLineRenderer"
 			],
@@ -110,10 +154,6 @@
 			[
 				"Gravity",
 				"GravityAttractor\tGravityAttractor"
-			],
-			[
-				"Find",
-				"FindGameObjectsWithTag(string tag)\tGameObject[]"
 			],
 			[
 				"Collider",
@@ -184,10 +224,6 @@
 				"fixedDeltaTime\tfloat { get; set; }"
 			],
 			[
-				"Get",
-				"GetAxisRaw(string axisName)\tfloat"
-			],
-			[
 				"GetAx",
 				"GetAxisRaw(string axisName)\tfloat"
 			],
@@ -250,10 +286,6 @@
 			[
 				"Clamp",
 				"Clamp(float value, float min, float max)\tfloat"
-			],
-			[
-				"ne",
-				"newRotationX\tfloat"
 			],
 			[
 				"newR",
@@ -364,10 +396,6 @@
 				"guiText\tComponent { get; }"
 			],
 			[
-				"game",
-				"gameObject\tGameObject { get; }"
-			],
-			[
 				"VEctr",
 				"Vector3\tVector3"
 			],
@@ -432,10 +460,6 @@
 				"GetKeyDown(string name)\tbool"
 			],
 			[
-				"player",
-				"playerController\tPlayerController"
-			],
-			[
 				"Ov",
 				"OverlapArea(Vector2 pointA, Vector2 pointB)\tCollider2D"
 			],
@@ -490,30 +514,6 @@
 			[
 				"Animation",
 				"AnimationEvent\tAnimationEvent"
-			],
-			[
-				"GetCompo",
-				"GetComponent<T>()\tT"
-			],
-			[
-				"sha",
-				"shakeDuration\tfloat"
-			],
-			[
-				"dama",
-				"damageCamera\tbool"
-			],
-			[
-				"hit",
-				"hitCount\tfloat"
-			],
-			[
-				"trans",
-				"transparent\tColor"
-			],
-			[
-				"glitch",
-				"glitch01Image\tImage"
 			]
 		]
 	},
@@ -529,10 +529,31 @@
 			}
 		},
 		{
+			"file": "Assets/Scripts/GameController.cs",
+			"settings":
+			{
+				"buffer_size": 828,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Assets/Scripts/FirstPersonController.cs",
 			"settings":
 			{
-				"buffer_size": 4079,
+				"buffer_size": 4873,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine.UI;\nusing UnityEngine;\n\npublic class UIController : MonoBehaviour {\n\n\tprivate GameObject pauseScreenImage;\n\tprivate Button[] menuButtons;\n\tprivate Button selectedButton;\n\tprivate Image playerStateImage;\n\n\t// Use this for initialization\n\tvoid Awake ()\n\t{\n\t\tpauseScreenImage = transform.Find(\"pauseScreen\").gameObject;\n\t\tmenuButtons = pauseScreenImage.GetComponentsInChildren<Button>();\n\t\tplayerStateImage = transform.Find(\"playerState\").GetComponent<Image>();\n\t}\n\n\tvoid Update ()\n\t{\n\t\tif (GameController.instance.gamePaused)\n\t\t{\n\t\t\treturn;\n\t\t}\n\n\t\tMenuSelection();\n\t}\n\n\tpublic void ChangePlayerStateImage (Color c)\n\t{\n\t\tplayerStateImage.color = c;\n\t}\n\n\tpublic void TogglePauseScreenState (bool gamePaused)\n\t{\n\t\tpauseScreenImage.SetActive(gamePaused);\n\t\tplayerStateImage.gameObject.SetActive(!gamePaused);\n\n\t\t// Sélectionne la première option du menu\n\t\tmenuButtons[0].Select();\n\t\tselectedButton = menuButtons[0];\n\t}\n\n\tprivate void MenuSelection()\n\t{\n\t\tif (Input.GetButtonDown(\"Jump\"))\n\t\t{\n\t\t\tselectedButton.\n\t\t}\n\t}\n}\n",
+			"file": "Assets/Scripts/UIController.cs",
+			"file_size": 1017,
+			"file_write_time": 131813245167862742,
+			"settings":
+			{
+				"buffer_size": 1092,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -559,16 +580,7 @@
 			"file": "Assets/Scripts/OrbitMotion.cs",
 			"settings":
 			{
-				"buffer_size": 2457,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/WanderingSpaceObject.cs",
-			"settings":
-			{
-				"buffer_size": 1544,
+				"buffer_size": 2521,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -577,7 +589,7 @@
 			"file": "Assets/Scripts/SandCollision.cs",
 			"settings":
 			{
-				"buffer_size": 398,
+				"buffer_size": 1030,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -586,7 +598,7 @@
 			"file": "Assets/Scripts/Ellipse.cs",
 			"settings":
 			{
-				"buffer_size": 1057,
+				"buffer_size": 1085,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -596,15 +608,6 @@
 			"settings":
 			{
 				"buffer_size": 1164,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/GameController.cs",
-			"settings":
-			{
-				"buffer_size": 449,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -904,6 +907,8 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/horsjeu-planets/planets/Assets/CosmoJumperBehaviour.cs",
+		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/UIController.cs",
 		"/D/Projects/horsjeu-planets/planets/Assets/WanderingSpaceObject.cs",
 		"/D/Projects/horsjeu-planets/planets/Assets/Scripts/FlagBehaviour.cs",
 		"/D/Projects/horsjeu-planets/planets/Assets/Scenes/main.unity",
@@ -1029,9 +1034,7 @@
 		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/PostProcessingTweaker.cs",
 		"/D/Cours/M2/GUERRE/Jam/guerre/Assets/Vincent/Scripts/UITargetController.cs",
 		"/D/Cours/M1/S2 - Arrault/Corpus iconographiques/Every 5 years the same dream.txt",
-		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Patch iO/io.nfo",
-		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/R2R/R2R.txt",
-		"/D/t411/Ableton Live Suite v9.7.2 Incl Patched and Keygen-R2R/Ableton972.nfo"
+		"/D/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Ableton live Suite v9.5 WiN x86 x64 FrenchMan120/Patch iO/io.nfo"
 	],
 	"find":
 	{
@@ -1049,6 +1052,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rastaPlanet",
+			"ch",
+			"InChildren",
+			"playerState",
+			"updateani",
+			"currentCanvas",
 			"hasDirection",
 			"x",
 			"Errand",
@@ -1089,7 +1098,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1117,24 +1126,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/FirstPersonController.cs",
+					"file": "Assets/Scripts/GameController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4079,
+						"buffer_size": 828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2714,
-								2641
+								718,
+								718
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"181,189": "Name should have prefix '_'. (Rule 'Fields').",
+								"212,219": "Name should have prefix '_'. (Rule 'Fields').",
+								"242,250": "Name should have prefix '_'. (Rule 'Fields').",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"289,299": "Name should have prefix '_'. (Rule 'Fields').",
+								"509,519": "Static method invoked via derived type"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/FirstPersonController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2396,
+								2396
 							]
 						],
 						"settings":
@@ -1143,26 +1191,61 @@
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"2643,2646": "Use 'var' keyword",
-								"2718,2720": "Convert to '?:' expression",
-								"371,388": "Convert to constant",
-								"429,446": "Convert to constant",
-								"487,496": "Convert to constant",
-								"535,544": "Convert to constant"
+								"2918,2921": "Use 'var' keyword",
+								"2993,2995": "Convert to '?:' expression",
+								"331,339": "The private field 'myCanvas' is never assigned",
+								"451,468": "Convert to constant",
+								"509,526": "Convert to constant",
+								"567,576": "Convert to constant",
+								"615,624": "Convert to constant"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1815.0,
+						"translation.y": 380.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "Assets/Scripts/UIController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1082,
+								1082
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"656,657": "Parameter can be IEquatable"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Assets/Scripts/GravityAttractor.cs",
 					"semi_transient": false,
 					"settings":
@@ -1174,8 +1257,8 @@
 						"selection":
 						[
 							[
-								25,
-								25
+								905,
+								661
 							]
 						],
 						"settings":
@@ -1196,11 +1279,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "Assets/Scripts/GravityBody.cs",
 					"semi_transient": false,
 					"settings":
@@ -1229,27 +1312,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 60.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "Assets/Scripts/OrbitMotion.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2457,
+						"buffer_size": 2521,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2357,
-								2339
+								1962,
+								1962
 							]
 						],
 						"settings":
@@ -1266,65 +1349,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Assets/WanderingSpaceObject.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1544,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								649,
-								649
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"1368,1371": "Use 'var' keyword",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"354,359": "The private field 'force' is never assigned",
-								"410,423": "Convert to constant",
-								"746,748": "Convert to '&=' expresssion"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "Assets/Scripts/SandCollision.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 398,
+						"buffer_size": 1030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								346,
-								346
+								330,
+								330
 							]
 						],
 						"settings":
@@ -1337,27 +1382,27 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "Assets/Scripts/Ellipse.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1057,
+						"buffer_size": 1085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1057,
-								1057
+								355,
+								355
 							]
 						],
 						"settings":
@@ -1371,11 +1416,7 @@
 								"241,247": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely.",
 								"263,269": "Name should have prefix '_'. (Rule 'Fields').",
-								"321,327": "Parameter 'height' is never used",
-								"378,382": "CS1717:Assignment made to same variable",
-								"402,406": "CS1717:Assignment made to same variable",
-								"426,430": "CS1717:Assignment made to same variable",
-								"862,869": "Use 'var' keyword"
+								"890,897": "Use 'var' keyword"
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -1384,11 +1425,11 @@
 						"translation.y": 6.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "Assets/Scripts/EllipseRenderer.cs",
 					"semi_transient": false,
 					"settings":
@@ -1413,43 +1454,7 @@
 						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Assets/Scripts/GameController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 449,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"181,189": "Name should have prefix '_'. (Rule 'Fields').",
-								"212,219": "Name should have prefix '_'. (Rule 'Fields').",
-								"26,31": "Using directive is not used by code and can be removed safely."
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1523,7 +1528,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
