@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-[ExecuteInEditMode]
+// [ExecuteInEditMode]
 public class OrbitMotion : MonoBehaviour
 {
 	[Header("References")]
@@ -20,6 +20,8 @@ public class OrbitMotion : MonoBehaviour
 	[Range(3,36)]
 	[SerializeField] private int RendererSegmentCount;
 
+	private Vector3 previousPosition;
+
 	// Use this for initialization
 	void Awake ()
 	{
@@ -29,6 +31,7 @@ public class OrbitMotion : MonoBehaviour
 			return;
 		}
 		lr = GetComponent<LineRenderer>();
+		previousPosition = transform.position;
 		CalculateEllipse();
 		SetOrbitingObjectPosition();
 		StartCoroutine(AnimateOrbit ());
@@ -45,6 +48,9 @@ public class OrbitMotion : MonoBehaviour
 			// Détermine un angle en fonction du pourcentage du parcours du tableau
 			Vector3 position3D = orbitPath.Evaluate(t);
 
+			// il faut que je stocke deux points pour déterminer une direction
+			// et ensuite changer son transform.forward
+
 			points[i] = planetOrbitingAround.transform.position + position3D - orbitOffset;
 		}
 		// On ferme la boucle
@@ -59,7 +65,14 @@ public class OrbitMotion : MonoBehaviour
 	void SetOrbitingObjectPosition ()
 	{
 		Vector3 orbitPos = orbitPath.Evaluate(orbitProgress);
-		transform.position = planetOrbitingAround.transform.position + orbitPos - orbitOffset;	
+		transform.position = planetOrbitingAround.transform.position + orbitPos - orbitOffset;
+
+		if (transform.position != previousPosition)
+		{
+			Vector3 newRotation = transform.position - previousPosition;
+			transform.rotation = Quaternion.LookRotation(newRotation);
+			previousPosition = transform.position;
+		}
 	}
 
 	IEnumerator AnimateOrbit ()
@@ -77,6 +90,14 @@ public class OrbitMotion : MonoBehaviour
 			orbitProgress %= 1f;
 			SetOrbitingObjectPosition();
 			yield return null;
+		}
+	}
+
+	void OnValidate ()
+	{
+		if (lr !=null && orbitActive)
+		{
+			CalculateEllipse();
 		}
 	}
 }

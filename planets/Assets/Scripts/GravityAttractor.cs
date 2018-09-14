@@ -25,7 +25,7 @@ public class GravityAttractor : MonoBehaviour {
 		Vector3 localUp = body.transform.up;
 
 		// Gravité
-		body.GetComponent<Rigidbody>().AddForce(gravityUp * gravity);
+		body.AddForce(gravityUp * gravity);
 
 		// Rotation en fonction du centre de la planète
 		Quaternion wantedRotation = Quaternion.FromToRotation(localUp, gravityUp) * body.rotation;

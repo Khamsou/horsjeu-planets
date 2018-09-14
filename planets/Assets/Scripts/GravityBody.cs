@@ -17,7 +17,6 @@ public class GravityBody : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		rb.useGravity = false;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
-	
 	}
 	
 	// Update is called once per frame

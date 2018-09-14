@@ -11,7 +11,7 @@ public class Ellipse  {
 	public float yAngle;
 	public float zAngle;
 
-	public Ellipse (float xAxis, float yAxis, float height)
+	public Ellipse (float xAxis, float yAxis, float xAngle, float yAngle, float zAngle)
 	{
 		this.xAxis = xAxis;
 		this.yAxis = yAxis;

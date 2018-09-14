@@ -9,7 +9,10 @@ public class FirstPersonController : MonoBehaviour {
 	private GravityBody gravityScript;
 	private Transform cameraTransform;
 	private Transform flagHolder;
+	[SerializeField] private UIController myCanvas;
+
 	private Rigidbody rb;
+	private Animator myAnimator;
 
 	[Header("Variables")]
 	[SerializeField] private float mouseSensitivityX = 3.5f;
@@ -17,6 +20,7 @@ public class FirstPersonController : MonoBehaviour {
 	[SerializeField] private float walkSpeed = 4f;
 	[SerializeField] private float jumpForce = 220f;
 	[SerializeField] private LayerMask groundedMask;
+	[SerializeField] private Vector3 moonRespawn;
 
 	private float verticalLookRotation;
 	private Vector3 moveAmount;
@@ -38,10 +42,16 @@ public class FirstPersonController : MonoBehaviour {
 		cameraTransform = Camera.main.transform;
 		flagHolder = transform.Find("FlagHolder");
 		rb = GetComponent<Rigidbody>();
+		myAnimator = GetComponentInChildren<Animator>();
 	}
 
 	void Update ()
 	{
+		if (GameController.instance.gamePaused)
+		{
+			return;
+		}
+
 		// Caméra
 		// Horizontal (on bouge le corps)
 		transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * mouseSensitivityX);
@@ -59,7 +69,6 @@ public class FirstPersonController : MonoBehaviour {
 		Vector3 targetMoveAmount = moveDirection * walkSpeed;
 		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, 0.15f);
 
-
 		// Lâcher de drapeau
 		if (hasFlag)
 		{
@@ -74,10 +83,17 @@ public class FirstPersonController : MonoBehaviour {
 		{
 			gravityScript.ChangePlanetAttractedTo();
 		}
+
+		UpdateAnimator();
 	}
 
 	void FixedUpdate ()
 	{
+		if (GameController.instance.gamePaused)
+		{
+			return;
+		}
+
 		// Déplacement
 		// MovePosition = world space
 		// Il nous faut du local space pour que le personnage se déplace par rapport à son axe propre
@@ -147,5 +163,39 @@ public class FirstPersonController : MonoBehaviour {
 		flag.transform.localScale = Vector3.one;
 
 		hasFlag = false;
+	}
+
+	private void UpdateAnimator()
+	{
+		myAnimator.SetBool("grounded", grounded);
+		myAnimator.SetFloat("magnitude", rb.velocity.magnitude);
+
+		if (myCanvas != null)
+		{
+			if (myAnimator.GetBool("grounded"))
+			{
+				if (myAnimator.GetFloat("magnitude") > 0.05f)
+				{
+					// Idle
+					myCanvas.ChangePlayerStateImage(Color.blue);
+				}
+				else
+				{
+					// Walking
+					myCanvas.ChangePlayerStateImage(Color.green);
+				}
+			}
+			else
+			{
+				// JumpState
+				myCanvas.ChangePlayerStateImage(Color.red);
+			}
+		}
+	}
+
+	public void MoonRespawn ()
+	{
+		transform.position = moonRespawn;
+		transform.rotation = Quaternion.identity;
 	}
 }
