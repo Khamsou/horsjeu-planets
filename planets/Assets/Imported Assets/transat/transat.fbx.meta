@@ -1,20 +1,26 @@
 fileFormatVersion: 2
-guid: 62553419cd845404bafd3b347827012f
+guid: d3bb0d2664427194e909242f93f0c9c7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: shyguy
+    2100000: redwood
+    2100002: flwhite
     2300000: //RootNode
     3300000: //RootNode
-    4300000: DrawCall_160
+    4300000: Couche:OBJECT019
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: shyguy
-    second: {fileID: 2100000, guid: 382f8666bd5f5a4419037af2b3a6094f, type: 2}
+      name: flwhite
+    second: {fileID: 2100000, guid: 6d8ceb0bdcc165c4db7135c3a397009c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: redwood
+    second: {fileID: 2100000, guid: b253c7bf90b5bd441b55359bad720ae2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
