@@ -4,8 +4,36 @@
 		"selected_items":
 		[
 			[
+				"move",
+				"moveDirection\tVector3"
+			],
+			[
+				"VEctor",
+				"Vector3(float x, float y)\tVector3(float x, float y)"
+			],
+			[
+				"L",
+				"LoadScene(int sceneBuildIndex)\tvoid"
+			],
+			[
+				"ac",
+				"GetActiveScene()\tScene"
+			],
+			[
+				"Sc",
+				"SceneManagement\tSceneManagement"
+			],
+			[
+				"Cla",
+				"Clamp(int value, int min, int max)\tint"
+			],
+			[
+				"selec",
+				"selectedButton\tint"
+			],
+			[
 				"Get",
-				"GetButtonDown(string buttonName)\tbool"
+				"GetAxisRaw(string axisName)\tfloat"
 			],
 			[
 				"Game",
@@ -308,10 +336,6 @@
 				"portalMaterial\tMaterial"
 			],
 			[
-				"VEctor",
-				"Vector3\tVector3"
-			],
-			[
 				"Clo",
 				"ClosestPoint\tVector3"
 			],
@@ -490,30 +514,6 @@
 			[
 				"Stop",
 				"StopCoroutine(IEnumerator routine)\tvoid"
-			],
-			[
-				"Sho",
-				"ShowDIH()\tvoid"
-			],
-			[
-				"anima",
-				"animator\tAnimator"
-			],
-			[
-				"FPST",
-				"FPSTargeter\tFPSTargeter"
-			],
-			[
-				"du",
-				"durationCodec\tfloat"
-			],
-			[
-				"AudioS",
-				"AudioSource\tAudioSource"
-			],
-			[
-				"Animation",
-				"AnimationEvent\tAnimationEvent"
 			]
 		]
 	},
@@ -532,7 +532,7 @@
 			"file": "Assets/Scripts/GameController.cs",
 			"settings":
 			{
-				"buffer_size": 828,
+				"buffer_size": 964,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -541,19 +541,34 @@
 			"file": "Assets/Scripts/FirstPersonController.cs",
 			"settings":
 			{
-				"buffer_size": 4873,
+				"buffer_size": 5090,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine.UI;\nusing UnityEngine;\n\npublic class UIController : MonoBehaviour {\n\n\tprivate GameObject pauseScreenImage;\n\tprivate Button[] menuButtons;\n\tprivate Button selectedButton;\n\tprivate Image playerStateImage;\n\n\t// Use this for initialization\n\tvoid Awake ()\n\t{\n\t\tpauseScreenImage = transform.Find(\"pauseScreen\").gameObject;\n\t\tmenuButtons = pauseScreenImage.GetComponentsInChildren<Button>();\n\t\tplayerStateImage = transform.Find(\"playerState\").GetComponent<Image>();\n\t}\n\n\tvoid Update ()\n\t{\n\t\tif (GameController.instance.gamePaused)\n\t\t{\n\t\t\treturn;\n\t\t}\n\n\t\tMenuSelection();\n\t}\n\n\tpublic void ChangePlayerStateImage (Color c)\n\t{\n\t\tplayerStateImage.color = c;\n\t}\n\n\tpublic void TogglePauseScreenState (bool gamePaused)\n\t{\n\t\tpauseScreenImage.SetActive(gamePaused);\n\t\tplayerStateImage.gameObject.SetActive(!gamePaused);\n\n\t\t// Sélectionne la première option du menu\n\t\tmenuButtons[0].Select();\n\t\tselectedButton = menuButtons[0];\n\t}\n\n\tprivate void MenuSelection()\n\t{\n\t\tif (Input.GetButtonDown(\"Jump\"))\n\t\t{\n\t\t\tselectedButton.\n\t\t}\n\t}\n}\n",
-			"file": "Assets/Scripts/UIController.cs",
-			"file_size": 1017,
-			"file_write_time": 131813245167862742,
+			"file": "Assets/Scripts/MovingNPC.cs",
 			"settings":
 			{
-				"buffer_size": 1092,
+				"buffer_size": 1853,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/WanderingSpaceObject.cs",
+			"settings":
+			{
+				"buffer_size": 1572,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/UIController.cs",
+			"settings":
+			{
+				"buffer_size": 1474,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -608,15 +623,6 @@
 			"settings":
 			{
 				"buffer_size": 1164,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MovingNPC.cs",
-			"settings":
-			{
-				"buffer_size": 866,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -1052,6 +1058,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Vector3",
+			"smoothmove",
+			"lagSelection",
 			"rastaPlanet",
 			"ch",
 			"InChildren",
@@ -1098,7 +1107,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1126,7 +1135,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1135,15 +1144,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 828,
+						"buffer_size": 964,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								718,
-								718
+								870,
+								870
 							]
 						],
 						"settings":
@@ -1151,21 +1160,22 @@
 							"oops":
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
-								"181,189": "Name should have prefix '_'. (Rule 'Fields').",
-								"212,219": "Name should have prefix '_'. (Rule 'Fields').",
-								"242,250": "Name should have prefix '_'. (Rule 'Fields').",
+								"216,224": "Name should have prefix '_'. (Rule 'Fields').",
+								"247,254": "Name should have prefix '_'. (Rule 'Fields').",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"289,299": "Name should have prefix '_'. (Rule 'Fields').",
-								"509,519": "Static method invoked via derived type"
+								"277,285": "Name should have prefix '_'. (Rule 'Fields').",
+								"324,334": "Name should have prefix '_'. (Rule 'Fields').",
+								"544,554": "Static method invoked via derived type",
+								"875,884": "Method 'ResetGame' can be made static."
 							},
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1174,15 +1184,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4873,
+						"buffer_size": 5090,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2396,
-								2396
+								5046,
+								5046
 							]
 						],
 						"settings":
@@ -1191,8 +1201,8 @@
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"2918,2921": "Use 'var' keyword",
-								"2993,2995": "Convert to '?:' expression",
+								"2965,2968": "Use 'var' keyword",
+								"3040,3042": "Convert to '?:' expression",
 								"331,339": "The private field 'myCanvas' is never assigned",
 								"451,468": "Convert to constant",
 								"509,526": "Convert to constant",
@@ -1204,27 +1214,27 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 380.0,
+						"translation.y": 3154.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/UIController.cs",
+					"file": "Assets/Scripts/MovingNPC.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1092,
+						"buffer_size": 1853,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1082,
-								1082
+								1109,
+								1109
 							]
 						],
 						"settings":
@@ -1232,20 +1242,89 @@
 							"oops":
 							{
 								"0,5": "Using directive is not used by code and can be removed safely.",
+								"1630,1633": "Use 'var' keyword",
+								"1705,1707": "Convert to '?:' expression",
+								"255,260": "The private field 'speed' is never assigned",
 								"26,31": "Using directive is not used by code and can be removed safely.",
-								"656,657": "Parameter can be IEquatable"
+								"392,399": "'forward' should start with an upper case letter. (Rule 'Enum Members')",
+								"401,406": "'drunk' should start with an upper case letter. (Rule 'Enum Members')"
 							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "Assets/Scripts/WanderingSpaceObject.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/UIController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1402,
+								1402
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"0,5": "Using directive is not used by code and can be removed safely.",
+								"1248,1253": "Comparison of floating point numbers can be unequal due to the differing precision of the two values.",
+								"26,31": "Using directive is not used by code and can be removed safely.",
+								"856,857": "Parameter can be IEquatable"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "Assets/Scripts/GravityAttractor.cs",
 					"semi_transient": false,
 					"settings":
@@ -1279,11 +1358,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "Assets/Scripts/GravityBody.cs",
 					"semi_transient": false,
 					"settings":
@@ -1312,14 +1391,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "Assets/Scripts/OrbitMotion.cs",
 					"semi_transient": false,
 					"settings":
@@ -1331,8 +1410,8 @@
 						"selection":
 						[
 							[
-								1962,
-								1962
+								2130,
+								1963
 							]
 						],
 						"settings":
@@ -1352,11 +1431,11 @@
 						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "Assets/Scripts/SandCollision.cs",
 					"semi_transient": false,
 					"settings":
@@ -1382,14 +1461,14 @@
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "Assets/Scripts/Ellipse.cs",
 					"semi_transient": false,
 					"settings":
@@ -1425,11 +1504,11 @@
 						"translation.y": 6.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "Assets/Scripts/EllipseRenderer.cs",
 					"semi_transient": false,
 					"settings":
@@ -1454,49 +1533,11 @@
 						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "Assets/Scripts/MovingNPC.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								859,
-								859
-							]
-						],
-						"settings":
-						{
-							"oops":
-							{
-								"0,5": "Using directive is not used by code and can be removed safely.",
-								"255,260": "The private field 'speed' is never assigned",
-								"26,31": "Using directive is not used by code and can be removed safely.",
-								"529,534": "Variable could be moved to a nested scope",
-								"643,646": "Use 'var' keyword",
-								"718,720": "Convert to '?:' expression"
-							},
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "Assets/Scripts/InteractableItemBehaviour.cs",
 					"semi_transient": false,
 					"settings":
@@ -1528,11 +1569,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "credits.txt",
 					"semi_transient": false,
 					"settings":
@@ -1557,11 +1598,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "/D/Projects/horsjeu-planets/README.md",
 					"semi_transient": false,
 					"settings":
@@ -1585,11 +1626,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "/D/Projects/horsjeu-planets/.gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1613,7 +1654,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 13,
 					"type": "text"
 				}
 			]
