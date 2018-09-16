@@ -5,15 +5,9 @@ using UnityEngine;
 [RequireComponent (typeof (Rigidbody))]
 public class GravityBody : MonoBehaviour {
 
-
-	[Header("References")]
 	public GameObject planetAttractedTo;
 	private GravityAttractor planetScript;
 	private Rigidbody rb;
-
-	[Header("Variables")]
-	public bool isFlying;
-	[HideInInspector] public float distanceToPlanet;
 
 	// Use this for initialization
 	void Awake ()
@@ -23,11 +17,6 @@ public class GravityBody : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		rb.useGravity = false;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
-
-		if (isFlying)
-		{
-			distanceToPlanet = (transform.position - planetAttractedTo.transform.position).magnitude;
-		}
 	}
 	
 	// Update is called once per frame
