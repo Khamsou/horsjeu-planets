@@ -1,21 +1,14 @@
 fileFormatVersion: 2
-guid: be5d6b12e2e61df4686c575f0ca77c0b
+guid: 024498a31e453e24db87600ac93987f3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: colline
-    100002: //RootNode
-    100004: Plane
-    400000: colline
-    400002: //RootNode
-    400004: Plane
+    100000: //RootNode
+    400000: //RootNode
     2100000: No Name
-    2300000: colline
-    2300002: Plane
-    3300000: colline
-    3300002: Plane
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Plane
-    4300002: colline
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -23,7 +16,7 @@ ModelImporter:
       name: No Name
     second: {fileID: 2100000, guid: 6fd8d09f13d507f478a36e71066d52cb, type: 2}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
