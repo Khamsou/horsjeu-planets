@@ -25,15 +25,7 @@ public class GravityAttractor : MonoBehaviour {
 		Vector3 localUp = body.transform.up;
 
 		// Gravité
-		if (body.GetComponent<GravityBody>().isFlying)
-		{
-			Vector3 appliedForce = (gravityUp * gravity) / 2;
-			body.AddForce(appliedForce);
-		}
-		else
-		{
-			body.AddForce(gravityUp * gravity);
-		}
+		body.AddForce(gravityUp * gravity);
 
 		// Rotation en fonction du centre de la planète
 		Quaternion wantedRotation = Quaternion.FromToRotation(localUp, gravityUp) * body.rotation;

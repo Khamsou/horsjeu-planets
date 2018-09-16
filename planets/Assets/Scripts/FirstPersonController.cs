@@ -106,8 +106,7 @@ public class FirstPersonController : MonoBehaviour {
 		{
 			if (grounded)
 			{
-				Vector3 jump = transform.TransformDirection(new Vector3(0f, 1f, 0.15f));
-				rb.AddForce(jump * jumpForce);
+				rb.AddForce(transform.up * jumpForce);
 			}
 		}
 
@@ -198,6 +197,5 @@ public class FirstPersonController : MonoBehaviour {
 	{
 		transform.position = moonRespawn;
 		transform.rotation = Quaternion.identity;
-		rb.velocity = Vector3.zero;
 	}
 }
