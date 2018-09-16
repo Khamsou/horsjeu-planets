@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GravityBody))]
 public class MovingNPC : MonoBehaviour {
 
 	[Header("References")]
 	private Rigidbody rb;
 	private Collider myCollider;
+	private GravityBody myBody;
 
 	[Header("Variables")]
 	[SerializeField] private float speed;
@@ -24,6 +26,7 @@ public class MovingNPC : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody>();
 		myCollider = GetComponent<Collider>();
+		myBody = GetComponent<GravityBody>();
 	}
 	
 	void Update ()
@@ -51,26 +54,44 @@ public class MovingNPC : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		if (grounded)
-		{		
-			// rb.AddForce(transform.forward * step);
+		if (myBody.isFlying)
+		{
+
+			float currentDistanceToPlanet = (transform.position - myBody.planetAttractedTo.transform.position).magnitude;
+			float subtractDistance = 0f;
+
+			// Si la distance à la planète a changé, on fait la différence puis on l'enlève
+			if (myBody.distanceToPlanet != currentDistanceToPlanet)
+			{
+				subtractDistance = currentDistanceToPlanet - myBody.distanceToPlanet;
+				moveAmount.y -= subtractDistance;
+			}
+
 			Vector3 localMove = transform.TransformDirection(moveAmount) * Time.fixedDeltaTime;
 
 			rb.MovePosition(rb.position + localMove);
 		}
-
-		Ray ray = new Ray(transform.position, -transform.up);
-		RaycastHit hit;
-
-		if (Physics.Raycast(ray, out hit, myCollider.bounds.size.y*2, groundedMask))
-		{
-			grounded = true;
-		}
 		else
 		{
-			grounded = false;
-		}
+			if (grounded)
+			{		
+				// rb.AddForce(transform.forward * step);
+				Vector3 localMove = transform.TransformDirection(moveAmount) * Time.fixedDeltaTime;
+				rb.MovePosition(rb.position + localMove);
+			}
 
+			Ray ray = new Ray(transform.position, -transform.up);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit, myCollider.bounds.size.y*2, groundedMask))
+			{
+				grounded = true;
+			}
+			else
+			{
+				grounded = false;
+			}
+		}
 	}
 
 }
