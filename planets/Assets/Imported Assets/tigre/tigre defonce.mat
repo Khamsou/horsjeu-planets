@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: cape
-  m_Shader: {fileID: 4800000, guid: b965f82ca09623c41afded17f5d27c27, type: 3}
+  m_Name: tigre defonce
+  m_Shader: {fileID: 4800000, guid: 0ee0e963dffa2ea4b984fb71931ce02c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 087b1ec222025db4d95572c1827ad591, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -47,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 59caa16b728e5e14b84c157ac865e48e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -60,21 +60,17 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.217
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _NormalIntensity: 1
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0.832
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SpecIntensity: 0.18
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-    - _Diffusecolor: {r: 0.12578864, g: 0.05072979, b: 0.18867922, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Speccolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -1,28 +1,14 @@
 fileFormatVersion: 2
-guid: 86e12d5fa8f46ef4bbb5a0083179abd5
+guid: e49521de38e90b143b9cbefd22aeee5c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: camelo
-    100004: Camera
-    100006: Lamp
-    100008: Lamp.001
-    100010: Lamp.002
     400000: //RootNode
-    400002: camelo
-    400004: Camera
-    400006: Lamp
-    400008: Lamp.001
-    400010: Lamp.002
-    2000000: Camera
     2100000: Material.001
-    2300000: camelo
-    3300000: camelo
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: camelo
-    10800000: Lamp
-    10800002: Lamp.001
-    10800004: Lamp.002
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -64,8 +50,8 @@ ModelImporter:
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
