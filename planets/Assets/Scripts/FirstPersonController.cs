@@ -140,14 +140,12 @@ public class FirstPersonController : MonoBehaviour {
 		hasFlag = true;
 		// On rend l'objet kinematic et on désactive sa boite de collision pour qu'il suive bien le joueur
 		flag.GetComponent<Rigidbody>().isKinematic = true;
-		flag.GetComponent<BoxCollider>().isTrigger = true;
+		flag.GetComponent<Collider>().isTrigger = true;
 		// On désactive le script de la gravité et on transforme le drapeau en enfant du joueur
 		flag.GetComponent<GravityBody>().enabled = false;
 		flag.transform.parent = flagHolder;
 		// Puis on met le bon transform
 		flag.transform.localPosition = Vector3.zero;
-		flag.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-
 	}
 
 	private void LeaveFlag ()
@@ -155,13 +153,12 @@ public class FirstPersonController : MonoBehaviour {
 		GameObject flag = flagHolder.Find("Flag").gameObject;
 		flag.GetComponent<GravityBody>().enabled = true;
 		flag.GetComponent<Rigidbody>().isKinematic = false;
-		flag.GetComponent<BoxCollider>().isTrigger = false;
+		flag.GetComponent<Collider>().isTrigger = false;
 
 		flag.GetComponent<GravityBody>().ChangePlanetAttractedTo();
 
 		flag.transform.parent = null;
-		flag.transform.position = transform.position + transform.forward*2;
-		flag.transform.localScale = Vector3.one;
+		flag.transform.position = transform.position + transform.forward*3;
 
 		hasFlag = false;
 	}
@@ -175,21 +172,13 @@ public class FirstPersonController : MonoBehaviour {
 		{
 			if (myAnimator.GetBool("grounded"))
 			{
-				if (myAnimator.GetFloat("magnitude") > 0.05f)
-				{
-					// Idle
-					myCanvas.ChangePlayerStateImage(Color.blue);
-				}
-				else
-				{
-					// Walking
-					myCanvas.ChangePlayerStateImage(Color.green);
-				}
+				// GroundState
+				myCanvas.ChangePlayerStateImage("ground");
 			}
 			else
 			{
 				// JumpState
-				myCanvas.ChangePlayerStateImage(Color.red);
+				myCanvas.ChangePlayerStateImage("jump");
 			}
 		}
 	}
