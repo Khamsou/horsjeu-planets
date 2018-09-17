@@ -4,10 +4,18 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: camelo
+    100004: Camera
+    100006: Lamp
     400000: //RootNode
+    400002: camelo
+    400004: Camera
+    400006: Lamp
     2100000: Material.001
     2300000: //RootNode
+    2300002: camelo
     3300000: //RootNode
+    3300002: camelo
     4300000: camelo
   externalObjects:
   - first:
@@ -45,13 +53,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

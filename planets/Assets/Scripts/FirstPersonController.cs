@@ -72,7 +72,7 @@ public class FirstPersonController : MonoBehaviour {
 		// Lâcher de drapeau
 		if (hasFlag)
 		{
-			if (Input.GetMouseButtonDown(0))
+			if (Input.GetButtonDown("Fire1"))
 			{
 				LeaveFlag();
 			}
