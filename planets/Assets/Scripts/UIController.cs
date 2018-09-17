@@ -1,14 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class UIController : MonoBehaviour {
 
+	[Header("References")]
+	[SerializeField] private Sprite playerStateGround;
+	[SerializeField] private Sprite playerStateJump;
 	private GameObject pauseScreenImage;
 	private Button[] menuButtons;
-	private int selectedButton;
 	private Image playerStateImage;
+	
+	[Header("Variables")]
+	private int selectedButton;
 	private float selectionLag = 0f;
 
 	// Use this for initialization
@@ -35,9 +40,19 @@ public class UIController : MonoBehaviour {
 		}
 	}
 
-	public void ChangePlayerStateImage (Color c)
+	public void ChangePlayerStateImage (string state)
 	{
-		playerStateImage.color = c;
+		switch (state)
+		{
+			case "ground":
+				playerStateImage.sprite = playerStateGround;
+				break;
+			case "jump":
+				playerStateImage.sprite = playerStateJump;
+				break;
+			default:
+				break;
+		}
 	}
 
 	public void TogglePauseScreenState (bool gamePaused)
